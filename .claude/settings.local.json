@@ -32,7 +32,17 @@
       "Bash(npx vercel@latest login)",
       "WebFetch(domain:pilot.e-icon.or.kr)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "Bash(git commit -m ' *)",
+      "Bash(env)",
+      "Read(//c/Users/hiked/.local/share/**)",
+      "Read(//c//**)",
+      "Bash(find \"$HOME\" -maxdepth 4 -iname \"*vercel*\" 2>/dev/null)",
+      "Bash(nslookup archive.e-icon.or.kr)",
+      "Bash(nslookup pilot.e-icon.or.kr)",
+      "Bash(xargs -I{} sh -c 'echo \"== {} ==\"; cat \"{}\"')",
+      "Bash(echo \"exit=$?\")",
+      "Bash(git ls-remote *)"
     ]
   }
 }
