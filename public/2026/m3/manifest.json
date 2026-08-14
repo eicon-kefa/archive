@@ -1,0 +1,11 @@
+{
+  "name": "IEUM — mind, soul & connect",
+  "short_name": "IEUM",
+  "description": "AI-powered preventive mental wellness — emotional self-assessments, wearable integration, AI insights, and peer support.",
+  "start_url": "/2026/m3/",
+  "scope": "/2026/m3/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1c1917",
+  "icons": []
+}
