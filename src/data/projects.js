@@ -12,7 +12,8 @@
  *   id              — 고유 번호, 마지막 항목보다 1 증가
  *   teamName        — 팀 코드 (예: "M1", "H6")
  *   country         — 국가명 영문 (필터에 사용됨, 반드시 영문으로)
- *   school          — 학교/기관명
+ *   school          — 국내 학교/기관명 (한국 멘토 학교)
+ *   schoolOverseas  — 해외 파트너 학교/기관명 (없으면 "")
  *   projectTitle    — 프로젝트/웹앱 제목
  *   theme           — 아래 테마 값 중 하나 선택
  *                     "Mental Health" | "Fitness" | "Nutrition" | "Elderly Care" |
@@ -48,6 +49,7 @@ export const projects = [
     teamName: "M1",
     country: "Indonesia",
     school: "하계중학교",
+    schoolOverseas: "SMK Telkom Malang",
     projectTitle: "GloShip — 청소년 정서 자가관리 AI 플랫폼",
     theme: "Mental Health",
     problem:
@@ -87,6 +89,7 @@ export const projects = [
     teamName: "M2",
     country: "Malaysia",
     school: "울산학성중학교",
+    schoolOverseas: "SMK Kunak",
     projectTitle: "Bloom — 청소년 금연·니코틴 관리 AI 웹앱",
     theme: "Disease Prevention",
     problem:
@@ -128,6 +131,7 @@ export const projects = [
     teamName: "M3",
     country: "Philippines",
     school: "대구공산중학교",
+    schoolOverseas: "Cavite Science Integrated School",
     projectTitle: "IEUM — 웨어러블 기반 정신건강 관리 AI 플랫폼",
     theme: "Mental Health",
     problem:
@@ -167,6 +171,7 @@ export const projects = [
     teamName: "M4",
     country: "Bangladesh",
     school: "성재중학교",
+    schoolOverseas: "Dhaka Residential Model College",
     projectTitle: "LightHouse — 청소년 디지털·수면 습관 AI 코칭 플랫폼",
     theme: "Mental Health",
     problem:
@@ -208,6 +213,7 @@ export const projects = [
     teamName: "H1",
     country: "Moldova",
     school: "충남삼성고등학교",
+    schoolOverseas: "IPLT \"Gheorghe Asachi\"",
     projectTitle: "SnapCare — 이미지·음성 기반 AI 건강관리 웹앱",
     theme: "Nutrition",
     problem:
@@ -247,6 +253,7 @@ export const projects = [
     teamName: "H2",
     country: "Rwanda",
     school: "대전대신고등학교",
+    schoolOverseas: "Rwanda Coding Academy",
     projectTitle: "ReNew — 오프라인 우선 청소년 정신건강 플랫폼",
     theme: "Mental Health",
     problem:
@@ -286,6 +293,7 @@ export const projects = [
     teamName: "H3",
     country: "Uzbekistan",
     school: "부산기계공업고등학교",
+    schoolOverseas: "The State Secondary School 355 & Presidential School in Tashkent",
     projectTitle: "Daily Cog — AI 맞춤형 두뇌훈련 웹앱",
     theme: "Disease Prevention",
     problem:
@@ -325,6 +333,7 @@ export const projects = [
     teamName: "H4",
     country: "Indonesia",
     school: "대덕소프트웨어마이스터고등학교",
+    schoolOverseas: "USG Education",
     projectTitle: "HERWORLD — 갱년기 여성 건강관리 AI 웹앱",
     theme: "Other",
     problem:
@@ -366,6 +375,7 @@ export const projects = [
     teamName: "H5",
     country: "Bangladesh",
     school: "선린인터넷고등학교",
+    schoolOverseas: "Madhabdi Sati Prasanna Institution & Holy Cross College",
     projectTitle: "MonAndo — VR·AI 기반 정신건강 관리 웹앱",
     theme: "Mental Health",
     problem:
@@ -405,6 +415,7 @@ export const projects = [
     teamName: "H6",
     country: "Indonesia",
     school: "청심국제고등학교",
+    schoolOverseas: "Eco Socio Tech School (EST)",
     projectTitle: "Hugrow — 가족 공동 웰니스 플랫폼",
     theme: "Other",
     problem:

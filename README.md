@@ -64,7 +64,8 @@ VS Code, 메모장 등 텍스트 편집기로 파일을 엽니다.
     id: 11,                         // ← 이전 팀보다 1 증가
     teamName: "H7",                 // ← 대회 팀 코드 (예: M5, H7)
     country: "South Korea",         // ← 반드시 영문 국가명
-    school: "학교명",
+    school: "국내 학교명 (한국 멘토 학교)",
+    schoolOverseas: "해외 파트너 학교명",  // 없으면 ""
     projectTitle: "앱이름 — 앱 제목 요약",
     theme: "Mental Health",         // ← 아래 유효값 목록 참고
     problem: "영문 문제 설명",
@@ -195,7 +196,8 @@ htmlPath: "/2026/h6/index.html",
 | `id` | number | 고유 번호. 마지막 항목 + 1 | 필수 |
 | `teamName` | string | 대회 팀 코드 (예: `M1`, `H6`) | 필수 |
 | `country` | string | **영문** 국가명. 필터에 사용됨 | 필수 |
-| `school` | string | 학교/기관명 | 필수 |
+| `school` | string | 국내 학교/기관명 (한국 멘토 학교) | 필수 |
+| `schoolOverseas` | string | 해외 파트너 학교/기관명 | `""` |
 | `projectTitle` | string | 프로젝트(웹앱) 제목 | 필수 |
 | `theme` | string | 위 8개 테마 중 하나 | 필수 |
 | `problem` | string | SDG 3 관련 문제 설명 — 영문 1~2문장 | `""` |

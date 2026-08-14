@@ -74,6 +74,7 @@ export default function ProjectModal({ project, onClose, onPreview }) {
           <h2 className={styles.title}>{project.projectTitle}</h2>
           <p className={styles.teamLine}>
             <strong>{project.teamName}</strong> · {project.school}
+            {project.schoolOverseas && ` · ${project.schoolOverseas}`}
           </p>
 
           {/* CTA buttons */}
