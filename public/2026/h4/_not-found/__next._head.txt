@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/2026/h4/_next/static/chunks/1095tdd-94jyk.js","/2026/h4/_next/static/chunks/0d3shmwh5_nmn.js"],"ViewportBoundary"]
+3:I[97367,["/2026/h4/_next/static/chunks/1095tdd-94jyk.js","/2026/h4/_next/static/chunks/0d3shmwh5_nmn.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#fff7f3"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"HERWORLD 약 관리"}],["$","meta","1",{"name":"description","content":"사진으로 약 정보를 확인하고 복약 목록에 저장하세요."}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Ohdz7wmAogM1tuYfU5vwE"}
