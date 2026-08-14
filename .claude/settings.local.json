@@ -14,7 +14,25 @@
       "Bash(identify \"C:/Users/hiked/project/public/eicon-logo.png\")",
       "Bash(python3 -c ' *)",
       "Bash(git rm *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(npx vercel *)",
+      "Bash(wait)",
+      "Bash(dir \"C:\\\\Users\\\\hiked\\\\project\\\\public\")",
+      "Bash(dir \"C:\\\\Users\\\\hiked\\\\project\")",
+      "Bash(md \"C:\\\\Users\\\\hiked\\\\project\\\\public\\\\images\")",
+      "Bash(npm run *)",
+      "PowerShell(python --version)",
+      "PowerShell(python -c \"import openpyxl; print\\('openpyxl:', openpyxl.__version__\\)\")",
+      "PowerShell($f = \"C:\\\\Users\\\\hiked\\\\Downloads\\\\예선대회\\\\2026_eICON_예선참가자_리스트_0529_심사용.xlsx\"; if \\(Test-Path $f\\) { $info = Get-Item $f; \"파일 크기: {0:N0} KB\" -f \\($info.Length/1024\\); \"생성 시각: $\\($info.LastWriteTime\\)\" } else { \"파일 없음\" })",
+      "PowerShell(cd \"C:\\\\Users\\\\hiked\\\\Downloads\\\\예선대회\"; $env:PYTHONIOENCODING='utf-8'; uv run --with openpyxl python build_eicon_v2.py 2>&1)",
+      "Bash(ls \"C:\\\\Users\\\\hiked\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\fa4ac23c-e916-46eb-881c-52b0c4666032\\\\df8cef71-5d7d-42f3-8f94-0f0bec2b6e5e\\\\skills\\\\\" 2>/dev/null || echo \"not found\")",
+      "WebFetch(domain:docs.google.com)",
+      "WebFetch(domain:doc-0c-9s-sheets.googleusercontent.com)",
+      "Bash(git tag *)",
+      "Bash(npx vercel@latest login)",
+      "WebFetch(domain:pilot.e-icon.or.kr)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(gh repo *)"
     ]
   }
 }

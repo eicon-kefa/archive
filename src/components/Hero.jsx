@@ -74,7 +74,7 @@ export default function Hero({ totalProjects }) {
               <div className={styles.mockupDots}>
                 <span /><span /><span />
               </div>
-              <div className={styles.mockupUrl}>pilot.e-icon.or.kr</div>
+              <div className={styles.mockupUrl}>archive.e-icon.or.kr</div>
             </div>
             <div className={styles.mockupBody}>
               <div className={styles.mockupTag}>SDG 3</div>

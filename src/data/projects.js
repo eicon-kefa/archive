@@ -10,7 +10,7 @@
  *
  * FIELD GUIDE (영문 필드 + 한국어 필드 쌍으로 구성):
  *   id              — 고유 번호, 마지막 항목보다 1 증가
- *   teamName        — 팀 이름 / 앱 이름
+ *   teamName        — 팀 코드 (예: "M1", "H6")
  *   country         — 국가명 영문 (필터에 사용됨, 반드시 영문으로)
  *   school          — 학교/기관명
  *   projectTitle    — 프로젝트/웹앱 제목
@@ -26,257 +26,416 @@
  *   keyFeatures     — 주요 기능 목록 (영문 배열, 3–5개)
  *   keyFeaturesKo   — 주요 기능 목록 (한국어 배열, 3–5개)
  *   techStack       — 사용 기술 목록 (배열)
- *   members         — 팀원 이름 목록 (배열)
- *   teacher         — 지도교사 이름
+ *   members         — 팀원 이름 목록 (배열) — 대회 자료에 미포함, 추후 보완
+ *   teacher         — 지도교사 이름 — 대회 자료에 미포함, 추후 보완
  *   deployUrl       — 배포된 웹앱 URL (없으면 "")
  *   githubUrl       — GitHub 저장소 URL (없으면 "")
  *   thumbnail       — 썸네일 이미지 경로 (없으면 "")
- *                     예: "/images/team01-먹보.png"
+ *                     예: "/images/m1-gloship.png"
  *                     이미지 파일은 public/images/ 폴더에 넣어야 합니다.
  *   htmlPath        — 팀 앱 HTML 경로 (없으면 "")
- *                     예: "/teams/team-01/index.html"
- *                     팀 파일은 public/teams/team-01/ 폴더에 통째로 넣어야 합니다.
+ *                     예: "/2026/m1/index.html"
+ *                     팀 파일은 public/2026/m1/ 폴더에 통째로 넣어야 합니다.
+ *                     (기술담당 멘토들이 정적 변환 후 이 경로에 맞춰 PR 제출)
  *
- * ─── 파일럿 v1 — 2026 e-ICON 파일럿 실제 팀 데이터 ───────────────────────
+ * ─── 제16회 e-ICON 세계대회 — 글로벌팀 본선 데이터 (260806 최종) ───────────
  */
 
 export const projects = [
-  // ─── TEAM 01 — 먹보 ───────────────────────────────────────────────────────
+  // ─── M1 — GloShip (하계중학교 · Indonesia) ─────────────────────────────────
   {
     id: 1,
-    teamName: "team-01",
-    country: "South Korea",
-    school: "",
-    projectTitle: "먹보 — 청소년 식습관 관리 앱",
-    theme: "Nutrition",
-    problem:
-      "Teenagers often develop poor eating habits without access to personalized guidance on balanced nutrition and healthy meal choices.",
-    problemKo:
-      "중·고등학생들은 균형 잡힌 영양 섭취와 건강한 식사 선택에 대한 안내 없이 잘못된 식습관을 갖게 됩니다.",
-    solution:
-      "A meal tracking app that records daily eating habits, recommends dietary improvements, and provides step-by-step recipes tailored to teenagers.",
-    solutionKo:
-      "일일 식습관을 기록하고 개선 방법을 추천하며 청소년에게 맞는 조리법을 단계별로 제공하는 식단 관리 앱입니다.",
-    description:
-      "Helping students build healthier eating habits through daily meal logging and personalized food recommendations.",
-    descriptionKo:
-      "매일 식사를 기록하고 맞춤 식습관 개선법과 조리법을 추천해 주는 청소년 식단 앱입니다.",
-    keyFeatures: [
-      "Daily meal habit logging & checklist",
-      "Personalized dietary recommendations",
-      "Dietary improvement tips & guides",
-      "Step-by-step recipe suggestions",
-    ],
-    keyFeaturesKo: [
-      "식습관 기록 및 체크리스트",
-      "개인 맞춤 식습관 추천",
-      "식습관 개선 방법 안내",
-      "조리법 단계별 안내",
-    ],
-    techStack: [],
-    members: ["김아인", "박성빈", "한승재", "이수민"],
-    teacher: "",
-    deployUrl: "",
-    githubUrl: "",
-    thumbnail: "",
-    htmlPath: "/teams/team-01/index.html",
-  },
-
-  // ─── TEAM 02 — eaaty ──────────────────────────────────────────────────────
-  {
-    id: 2,
-    teamName: "team-2",
-    country: "South Korea",
-    school: "",
-    projectTitle: "eaaty — 탄단지 식단 분석 앱",
-    theme: "Nutrition",
-    problem:
-      "People struggle to track and balance their macronutrient (carbohydrate, protein, fat) intake without a simple, visual daily tool.",
-    problemKo:
-      "사람들은 탄수화물·단백질·지방 섭취량을 쉽게 파악하고 균형 잡는 방법을 몰라 건강한 식단을 유지하기 어렵습니다.",
-    solution:
-      "A nutrition tracker that analyzes the past 7 days of meals, visualizes calorie and macronutrient percentages, and suggests recipes for balanced eating.",
-    solutionKo:
-      "최근 7일간의 식단을 분석하고 열량·탄단지 비율을 시각화하며 균형 잡힌 식사를 위한 레시피를 추천하는 영양 추적 앱입니다.",
-    description:
-      "Analyze your weekly diet and get macro-balanced meal suggestions — calories, carbs, protein, and fat at a glance.",
-    descriptionKo:
-      "7일 식단 분석으로 탄단지 균형을 확인하고 맞춤 조리법을 추천받는 영양 관리 앱입니다.",
-    keyFeatures: [
-      "7-day meal history analysis",
-      "Step-by-step recipe lookup",
-      "Calorie & macronutrient percentage visualization",
-    ],
-    keyFeaturesKo: [
-      "최근 7일 식단 분석",
-      "조리법 단계별 안내",
-      "열량·탄단지 퍼센트 시각화",
-    ],
-    techStack: [],
-    members: ["안수범", "전유승", "이서현"],
-    teacher: "",
-    deployUrl: "",
-    githubUrl: "",
-    thumbnail: "",
-    htmlPath: "/teams/team-02/index.html",
-  },
-
-  // ─── TEAM 03 — 운동어디 ───────────────────────────────────────────────────
-  {
-    id: 3,
-    teamName: "team-3",
-    country: "South Korea",
-    school: "",
-    projectTitle: "운동어디 — 운동 시설 지도 앱",
-    theme: "Fitness",
-    problem:
-      "People who want to exercise regularly don't know where nearby fitness facilities are or how suitable they are for their needs.",
-    problemKo:
-      "운동하고 싶은 사람들은 주변 운동 시설이 어디 있는지, 어떤 시설인지 파악하기 어렵습니다.",
-    solution:
-      "A map-based app that shows nearby fitness facilities, provides detailed information, and allows users to rate and review each location.",
-    solutionKo:
-      "지도 기반으로 인근 운동 시설을 보여주고, 시설 정보를 제공하며 사용자 평가 및 리뷰를 남길 수 있는 앱입니다.",
-    description:
-      "Find the best nearby workout spots with map-based facility search and honest community ratings.",
-    descriptionKo:
-      "지도로 내 주변 운동 시설을 찾고 커뮤니티 평가로 최적의 장소를 선택하는 앱입니다.",
-    keyFeatures: [
-      "Map-based fitness facility search",
-      "Detailed facility information & hours",
-      "Community ratings and reviews",
-    ],
-    keyFeaturesKo: [
-      "지도 기반 운동 시설 검색",
-      "시설 정보 및 운영 시간 안내",
-      "사용자 시설 평가 및 리뷰",
-    ],
-    techStack: [],
-    members: ["이진훤", "장재영"],
-    teacher: "",
-    deployUrl: "",
-    githubUrl: "",
-    thumbnail: "",
-    htmlPath: "/teams/team-03/index.html",
-  },
-
-  // ─── TEAM 04 — sleeplog ───────────────────────────────────────────────────
-  {
-    id: 4,
-    teamName: "team-4",
-    country: "South Korea",
-    school: "",
-    projectTitle: "sleeplog — 청소년 수면 관리 앱",
+    teamName: "M1",
+    country: "Indonesia",
+    school: "하계중학교",
+    projectTitle: "GloShip — 청소년 정서 자가관리 AI 플랫폼",
     theme: "Mental Health",
     problem:
-      "Teenagers suffer from chronic sleep deprivation but lack tools to track their sleep patterns and build consistent bedtime habits.",
+      "Teenagers often lack tools to self-manage their emotions and catch early mental health warning signs before problems require clinical diagnosis.",
     problemKo:
-      "청소년들은 만성적인 수면 부족에 시달리지만, 수면 패턴을 추적하고 규칙적인 취침 습관을 형성할 도구가 없습니다.",
+      "청소년들은 정신건강 문제가 진단 단계에 이르기 전, 정서를 스스로 관리하고 조기에 위험 신호를 확인할 도구가 부족합니다.",
     solution:
-      "A sleep tracker that logs sleep hours, visualizes weekly trends as graphs, sends bedtime reminders, and rewards consistent sleep with achievement badges.",
+      "An AI web platform combining MoodMap for emotion logging and visualization, MoveMates for AI-recommended peer activities, and BridgeCare for detecting risk signals and connecting users to professional support.",
     solutionKo:
-      "수면 시간을 기록하고 주간 추세를 그래프로 보여주며, 취침 알림과 배지 보상으로 규칙적인 수면 습관 형성을 돕는 앱입니다.",
+      "감정을 기록·시각화하는 MoodMap, AI 기반 또래 활동 추천 MoveMates, 위험 신호를 감지해 전문기관과 연계하는 BridgeCare로 구성된 AI 웹 플랫폼입니다.",
     description:
-      "Build better sleep habits with sleep logging, weekly trend graphs, smart bedtime reminders, and badge rewards.",
+      "Helping teens track emotions, get AI-matched peer support, and connect early warning signs to professional help.",
     descriptionKo:
-      "수면 기록, 주간 그래프, 취침 알림, 배지 보상으로 청소년의 건강한 수면 습관을 형성하는 앱입니다.",
+      "감정 기록, AI 또래 매칭, 위험 신호 조기연계까지 지원하는 청소년 정서관리 플랫폼입니다.",
     keyFeatures: [
-      "Sleep time logging & tracking",
-      "Weekly sleep trend graph visualization",
-      "Bedtime reminder notifications",
-      "Badge reward system for consistent sleep",
+      "Daily mood tracking & pattern visualization (MoodMap)",
+      "AI-matched peer activity recommendations (MoveMates)",
+      "Risk signal detection & professional referral (BridgeCare)",
     ],
     keyFeaturesKo: [
-      "수면 시간 기록 및 추적",
-      "주간 수면 추세 그래프 시각화",
-      "취침 시간 알림 기능",
-      "꾸준한 수면 달성 배지 시스템",
+      "감정 기록 및 변화 패턴 시각화 (MoodMap)",
+      "AI 기반 맞춤형 또래 활동 추천 (MoveMates)",
+      "위험 신호 확인 및 전문기관 연계 (BridgeCare)",
     ],
-    techStack: [],
-    members: ["김승연", "정주윤", "문혜윤"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Claude Haiku 4.5 API"],
+    members: [],
     teacher: "",
     deployUrl: "",
     githubUrl: "",
     thumbnail: "",
-    htmlPath: "/teams/team-04/index.html",
+    htmlPath: "/2026/m1/index.html",
   },
 
-  // ─── TEAM 05 — Well-being Butler ──────────────────────────────────────────
+  // ─── M2 — Bloom (울산학성중학교 · Malaysia) ────────────────────────────────
+  {
+    id: 2,
+    teamName: "M2",
+    country: "Malaysia",
+    school: "울산학성중학교",
+    projectTitle: "Bloom — 청소년 금연·니코틴 관리 AI 웹앱",
+    theme: "Disease Prevention",
+    problem:
+      "Teenagers struggling with smoking and nicotine dependence often lack immediate, anonymous tools to manage cravings and build cessation habits.",
+    problemKo:
+      "청소년들은 흡연과 니코틴 의존에서 벗어나고 싶어도 즉각적인 대응 도구나 익명으로 지원받을 방법이 없어 어려움을 겪습니다.",
+    solution:
+      "An anonymous AI web app that tracks smoking habits, offers an SOS chatbot for craving moments, recommends evidence-based quests, and rewards progress through a digital recovery garden.",
+    solutionKo:
+      "흡연 기록과 AI 맞춤 조언, 실시간 SOS 챗봇, 근거 기반 맞춤 퀘스트, 디지털 회복 정원 등으로 금연을 돕는 익명 AI 웹앱입니다.",
+    description:
+      "An anonymous AI app helping teens quit smoking through SOS chat, personalized quests, and a recovery garden.",
+    descriptionKo:
+      "흡연 기록, AI SOS 챗봇, 맞춤 퀘스트로 청소년의 금연을 돕는 익명 AI 웹앱입니다.",
+    keyFeatures: [
+      "Smoking habit logging & AI-based advice",
+      "Real-time SOS chatbot for craving moments",
+      "Evidence-based personalized quests",
+      "Digital recovery garden with rewards",
+    ],
+    keyFeaturesKo: [
+      "흡연 습관 기록 및 AI 맞춤 조언",
+      "실시간 충동 SOS 챗봇",
+      "근거 기반 맞춤형 퀘스트",
+      "보상형 디지털 회복 정원",
+    ],
+    techStack: ["React 19", "TypeScript", "Vite", "Express", "Supabase PostgreSQL", "OpenAI/Gemini API"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/m2/index.html",
+  },
+
+  // ─── M3 — IEUM (대구공산중학교 · Philippines) ──────────────────────────────
+  {
+    id: 3,
+    teamName: "M3",
+    country: "Philippines",
+    school: "대구공산중학교",
+    projectTitle: "IEUM — 웨어러블 기반 정신건강 관리 AI 플랫폼",
+    theme: "Mental Health",
+    problem:
+      "Young people often struggle to recognize their own mental health state and connect with professional support when they need it.",
+    problemKo:
+      "청년층은 자신의 정신건강 상태를 스스로 인식하고 필요할 때 전문 상담과 연결되는 데 어려움을 겪습니다.",
+    solution:
+      "An AI platform combining EUM Living Twin (a biometric-driven emotional avatar), PsychConnect (AI emotional care with instant access to professional counselors), and IEUM Bamboo Forest (an anonymous peer support community).",
+    solutionKo:
+      "웨어러블 생체 데이터로 감정 아바타를 생성하는 EUM Living Twin, AI 감정 케어와 전문 상담사 연결을 지원하는 PsychConnect, 익명 또래 커뮤니티 IEUM Bamboo Forest로 구성된 AI 플랫폼입니다.",
+    description:
+      "A wearable-driven AI platform visualizing emotions and connecting at-risk youth to counselors and peers.",
+    descriptionKo:
+      "웨어러블 생체 데이터 기반 감정 시각화와 전문 상담 연계를 지원하는 AI 플랫폼입니다.",
+    keyFeatures: [
+      "Biometric-based emotional avatar (EUM Living Twin)",
+      "AI emotional care & instant counselor connection (PsychConnect)",
+      "Anonymous peer support community (Bamboo Forest)",
+    ],
+    keyFeaturesKo: [
+      "웨어러블 생체 데이터 기반 감정 아바타 (EUM Living Twin)",
+      "AI 감정 케어 및 전문 상담사 즉시 연결 (PsychConnect)",
+      "익명 또래 감정 공유 커뮤니티 (Bamboo Forest)",
+    ],
+    techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Groq AI", "Fitbit API"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/m3/index.html",
+  },
+
+  // ─── M4 — LightHouse (성재중학교 · Bangladesh) ─────────────────────────────
+  {
+    id: 4,
+    teamName: "M4",
+    country: "Bangladesh",
+    school: "성재중학교",
+    projectTitle: "LightHouse — 청소년 디지털·수면 습관 AI 코칭 플랫폼",
+    theme: "Mental Health",
+    problem:
+      "Teenagers struggle to build healthy digital and sleep habits, and lack consistent coaching tools to sustain the change.",
+    problemKo:
+      "청소년들은 건강한 디지털·수면 습관을 형성하는 데 어려움을 겪지만, 이를 꾸준히 이끌어줄 코칭 도구가 부족합니다.",
+    solution:
+      "A global coaching platform combining a Personal Pattern Engine that visualizes weekly balance from a 30-second daily check-in, personalized real-life wellness challenges, and Lumi, a CBT/DBT-based AI companion with guardian/teacher connection.",
+    solutionKo:
+      "일일 체크인으로 삶의 균형을 시각화하는 Personal Pattern Engine, 맞춤형 실생활 챌린지, CBT/DBT 기반 AI 동반자 Lumi로 구성된 글로벌 협력 코칭 플랫폼입니다.",
+    description:
+      "An AI coaching platform tracking sleep and digital habits with global challenges and a CBT/DBT companion.",
+    descriptionKo:
+      "수면·디지털 습관을 추적하고 글로벌 챌린지와 AI 코칭을 제공하는 청소년 웰빙 플랫폼입니다.",
+    keyFeatures: [
+      "30-second daily check-in & weekly pattern visualization",
+      "Personalized wellness experiments & global co-op challenges",
+      "CBT/DBT-based AI companion with crisis hotline connection",
+      "Consent-based guardian/teacher progress sharing",
+    ],
+    keyFeaturesKo: [
+      "30초 일일 체크인 및 주간 패턴 시각화",
+      "맞춤형 웰니스 실험 및 글로벌 협력 챌린지",
+      "CBT·DBT 기반 AI 동반자 및 위기 상담 연결",
+      "동의 기반 보호자·교사 성장 신호 공유",
+    ],
+    techStack: ["React", "Vite", "PWA", "TypeScript", "Express.js", "SQLite", "OpenAI API"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/m4/index.html",
+  },
+
+  // ─── H1 — SnapCare (충남삼성고등학교 · Moldova) ────────────────────────────
   {
     id: 5,
-    teamName: "team-5",
-    country: "South Korea",
-    school: "",
-    projectTitle: "Well-being Butler — AI 웰빙 생활 습관 코치",
-    theme: "Other",
+    teamName: "H1",
+    country: "Moldova",
+    school: "충남삼성고등학교",
+    projectTitle: "SnapCare — 이미지·음성 기반 AI 건강관리 웹앱",
+    theme: "Nutrition",
     problem:
-      "Modern workers struggle to correct unhealthy daily routines and find meaningful hobbies without personalized guidance.",
+      "Low-literacy and medically underserved populations struggle to understand meal/nutrition information and prescriptions, and to manage medication routines.",
     problemKo:
-      "현대 직장인들은 건강하지 않은 생활 습관을 교정하고 의미 있는 취미를 찾는 데 개인 맞춤 도움이 없어 어려움을 겪습니다.",
+      "저문해·의료취약계층은 식사·영양 정보나 처방전을 이해하고 복약을 관리하는 데 어려움을 겪습니다.",
     solution:
-      "An AI conversational assistant that provides tailored wellness solutions, helps users write specific improvement plans, and sends reminders to prevent plan abandonment.",
+      "An AI health app that auto-detects meals, nutrition labels, or prescriptions from a single photo, tracks medication schedules with reminders, and uses a voice/emoji-based UI accessible to low-literacy users.",
     solutionKo:
-      "대화형 AI가 맞춤 웰빙 솔루션을 제공하고, 구체적인 개선 계획 작성을 돕고, 계획 실천을 놓치지 않도록 알림을 보내는 웰빙 코치 앱입니다.",
+      "사진 한 장으로 식사·영양성분표·처방전을 자동 판별하고, 복약 시간을 알림으로 추적하며, 음성·이모지 기반 UI로 문해력이 낮은 사용자도 쉽게 이용할 수 있는 AI 건강관리 웹앱입니다.",
     description:
-      "Your personal AI wellness coach — chat to get solutions, build plans, and stay accountable for healthier daily habits.",
+      "A photo-based AI health app helping low-literacy users manage meals, nutrition, and medication easily.",
     descriptionKo:
-      "AI와 대화로 맞춤 웰빙 솔루션을 받고 생활 습관 개선 계획을 세우고 실천하도록 돕는 웰빙 버틀러 앱입니다.",
+      "사진 한 장으로 식사·영양·복약을 관리하는 저문해층 대상 AI 건강관리 앱입니다.",
     keyFeatures: [
-      "AI chat-based counseling & wellness solutions",
-      "Personalized improvement plan builder",
-      "Accountability reminders to prevent plan abandonment",
+      "Automatic photo-based meal/nutrition/prescription detection",
+      "Medication tracking & reminders",
+      "Voice and emoji-based low-literacy accessibility layer",
     ],
     keyFeaturesKo: [
-      "AI 대화 기반 상담 및 웰빙 솔루션 제공",
-      "개인 맞춤 생활 개선 계획 작성",
-      "계획 불이행 예방 알림",
+      "사진 기반 식사·영양성분표·처방전 자동 판별",
+      "복약 추적 및 알림",
+      "음성·이모지 조합 저문해 접근성 레이어",
     ],
-    techStack: [],
-    members: ["박시우", "정상준", "김범서"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "onnxruntime-web", "Anthropic API", "OpenAI API"],
+    members: [],
     teacher: "",
     deployUrl: "",
     githubUrl: "",
     thumbnail: "",
-    htmlPath: "/teams/team-05/index.html",
+    htmlPath: "/2026/h1/index.html",
   },
 
-  // ─── TEAM 06 — 핏밀 (FitMeal) ─────────────────────────────────────────────
+  // ─── H2 — ReNew (대전대신고등학교 · Rwanda) ────────────────────────────────
   {
     id: 6,
-    teamName: "team-6",
-    country: "South Korea",
-    school: "",
-    projectTitle: "핏밀(FitMeal) — 맞춤 운동·식단 추천 앱",
-    theme: "Fitness",
+    teamName: "H2",
+    country: "Rwanda",
+    school: "대전대신고등학교",
+    projectTitle: "ReNew — 오프라인 우선 청소년 정신건강 플랫폼",
+    theme: "Mental Health",
     problem:
-      "Teenagers facing lack of exercise have no personalized workout or meal plans that account for their individual body type and health goals.",
+      "Vulnerable youth struggle to access daily recovery support connected to community health workers, and few mental health tools work reliably in low-connectivity environments.",
     problemKo:
-      "운동이 부족한 청소년들은 자신의 체형과 목표에 맞는 운동법이나 식단 계획을 찾기 어렵습니다.",
+      "취약 청소년은 마을 보건 도우미와 연계된 일상 회복 지원을 받기 어렵고, 인터넷이 불안정한 환경에서는 이용 가능한 정신건강 도구가 부족합니다.",
     solution:
-      "An app that recommends workouts tailored to body type and fitness goals, sends exercise reminders at the right time, and suggests matching meal plans.",
+      "A mental health platform where AI recommends personalized missions from check-in data, tracks mission completion via SMS/photo analysis, and keeps working offline using a browser-cached AI model that syncs once reconnected.",
     solutionKo:
-      "체형과 건강 목표에 맞는 운동을 추천하고, 운동 시간에 알림을 보내며, 운동에 맞는 식단을 함께 추천하는 청소년 피트니스 앱입니다.",
+      "AI가 체크인 데이터를 분석해 맞춤 미션을 추천하고, SMS·사진 기반으로 미션 수행을 자동 추적하며, 오프라인에서도 브라우저 캐싱된 AI 모델로 동작하는 정신건강 플랫폼입니다.",
     description:
-      "Personalized workout and meal plans for teens — tailored to your body type, goals, and schedule.",
+      "An offline-first AI platform recommending recovery missions and tracking progress for vulnerable youth.",
     descriptionKo:
-      "체형과 목표에 맞는 운동 추천, 운동 알림, 맞춤 식단까지 제공하는 청소년 맞춤 피트니스 앱입니다.",
+      "AI 미션 추천과 자동 추적으로 오프라인에서도 작동하는 청소년 회복 지원 플랫폼입니다.",
     keyFeatures: [
-      "Body-type & goal-based workout recommendations",
-      "Exercise time reminder notifications",
-      "Personalized meal plan suggestions",
+      "AI-recommended missions from check-in data",
+      "Automatic mission tracking via SMS/OCR/photo analysis",
+      "Offline-first operation with browser-cached AI model",
     ],
     keyFeaturesKo: [
-      "체형·목표 맞춤 운동 추천",
-      "운동 시간 알림 기능",
-      "맞춤 식단 추천",
+      "체크인 데이터 기반 AI 미션 추천",
+      "SMS·OCR·사진 분석 기반 자동 미션 추적",
+      "오프라인 우선 동작 (브라우저 캐싱 AI 모델)",
     ],
-    techStack: [],
-    members: ["조은혁", "이예준", "류하진"],
+    techStack: ["React 19", "TypeScript", "Vite", "Node.js", "Express", "Supabase", "MLC WebLLM", "Gemini API"],
+    members: [],
     teacher: "",
     deployUrl: "",
     githubUrl: "",
     thumbnail: "",
-    htmlPath: "/teams/team-06/index.html",
+    htmlPath: "/2026/h2/index.html",
+  },
+
+  // ─── H3 — Daily Cog (부산기계공업고등학교 · Uzbekistan) ────────────────────
+  {
+    id: 7,
+    teamName: "H3",
+    country: "Uzbekistan",
+    school: "부산기계공업고등학교",
+    projectTitle: "Daily Cog — AI 맞춤형 두뇌훈련 웹앱",
+    theme: "Disease Prevention",
+    problem:
+      "Preventing dementia and maintaining cognitive health requires consistent brain training, but few tools sustain long-term engagement.",
+    problemKo:
+      "치매를 예방하고 인지 건강을 유지하려면 꾸준한 두뇌 훈련이 필요하지만, 지속적인 참여를 이끌어낼 도구가 부족합니다.",
+    solution:
+      "An AI brain-training web app combining DailyCog Play (12 cognitive games with personalized activity recommendations), Puppy Buddy (a gamified virtual pet), and ShareCare (a caregiver dashboard with engagement alerts).",
+    solutionKo:
+      "12개 인지 게임으로 인지 특성을 평가하고 맞춤 활동을 추천하는 DailyCog Play, 가상 반려견을 키우는 Puppy Buddy, 보호자용 대시보드 ShareCare로 구성된 AI 두뇌훈련 웹앱입니다.",
+    description:
+      "An AI cognitive training app using games, a virtual pet, and a caregiver dashboard to sustain engagement.",
+    descriptionKo:
+      "인지 게임과 가상 반려견, 보호자 대시보드로 꾸준한 두뇌훈련을 돕는 AI 앱입니다.",
+    keyFeatures: [
+      "12 cognitive games with personalized activity recommendations",
+      "Gamified virtual pet rewards (Puppy Buddy)",
+      "Caregiver dashboard with engagement alerts (ShareCare)",
+    ],
+    keyFeaturesKo: [
+      "12개 인지 게임 기반 맞춤 활동 추천",
+      "가상 반려견 게이미피케이션 (Puppy Buddy)",
+      "보호자용 대시보드 및 참여 독려 알림 (ShareCare)",
+    ],
+    techStack: ["Vanilla JavaScript", "Node.js", "Supabase", "OpenAI API", "Google OAuth 2.0"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/h3/index.html",
+  },
+
+  // ─── H4 — HERWORLD (대덕소프트웨어마이스터고등학교 · Indonesia) ────────────
+  {
+    id: 8,
+    teamName: "H4",
+    country: "Indonesia",
+    school: "대덕소프트웨어마이스터고등학교",
+    projectTitle: "HERWORLD — 갱년기 여성 건강관리 AI 웹앱",
+    theme: "Other",
+    problem:
+      "Women going through menopause often lack the information and tools needed to manage symptoms, medications, and prepare for medical visits.",
+    problemKo:
+      "갱년기 여성은 증상과 복약을 관리하고 진료를 준비하는 데 필요한 정보와 도구가 부족합니다.",
+    solution:
+      "An AI health app combining Daily Log & AI Insights for symptom tracking, Medication Safety for analyzing prescriptions and interactions, and AI Chat & Doctor Report for generating shareable consultation reports.",
+    solutionKo:
+      "일상 증상을 기록하고 AI 인사이트를 제공하는 Daily Log, 의약품 정보를 분석하는 Medication Safety, 의료진 상담용 보고서를 생성하는 AI Chat & Doctor Report로 구성된 AI 건강관리 웹앱입니다.",
+    description:
+      "An AI app helping women track menopause symptoms, manage medication safety, and prep doctor visits.",
+    descriptionKo:
+      "갱년기 증상 기록과 복약 안전 분석, 의료진 상담 보고서를 지원하는 AI 여성건강 앱입니다.",
+    keyFeatures: [
+      "Daily symptom logging with AI pattern insights",
+      "Photo-based medication label analysis & safety warnings",
+      "Bilingual AI chat for menopause health questions",
+      "Shareable doctor consultation report (PDF/CSV)",
+    ],
+    keyFeaturesKo: [
+      "일상 증상 기록 및 AI 인사이트 제공",
+      "사진 기반 의약품 정보 추출 및 주의사항 분석",
+      "한국어·영어 AI 건강 상담 챗봇",
+      "의료진 상담용 보고서 생성 및 공유",
+    ],
+    techStack: ["Next.js", "React", "TypeScript", "Prisma", "SQLite", "Claude API"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/h4/index.html",
+  },
+
+  // ─── H5 — MonAndo (선린인터넷고등학교 · Bangladesh) ────────────────────────
+  {
+    id: 9,
+    teamName: "H5",
+    country: "Bangladesh",
+    school: "선린인터넷고등학교",
+    projectTitle: "MonAndo — VR·AI 기반 정신건강 관리 웹앱",
+    theme: "Mental Health",
+    problem:
+      "People experiencing anxiety and burnout often struggle to find affordable, consistently accessible mental health tools.",
+    problemKo:
+      "불안과 번아웃을 겪는 사람들은 비용 부담 없이 꾸준히 이용할 수 있는 정신건강 관리 도구를 찾기 어렵습니다.",
+    solution:
+      "A low-cost mental health web app combining smartphone-based VR exposure therapy with real-time AI voice guidance, AI-guided counseling conversations, and visual anxiety/emotion progress reports.",
+    solutionKo:
+      "스마트폰 기반 VR 노출치료와 실시간 AI 안내, 생각을 유도하는 AI 상담, 불안도와 감정을 시각화하는 리포트로 구성된 저비용 정신건강 관리 웹앱입니다.",
+    description:
+      "A low-cost VR exposure therapy and AI counseling app helping manage anxiety and burnout.",
+    descriptionKo:
+      "스마트폰 VR 노출치료와 AI 상담으로 불안·번아웃 완화를 돕는 저비용 정신건강 앱입니다.",
+    keyFeatures: [
+      "Smartphone VR exposure therapy with real-time AI voice guidance",
+      "AI-guided counseling conversations",
+      "Visual anxiety graph & emotion board reports",
+    ],
+    keyFeaturesKo: [
+      "실시간 AI 음성 안내 기반 스마트폰 VR 노출치료",
+      "AI 유도형 상담 대화",
+      "불안도 그래프 및 감정 보드 시각화 리포트",
+    ],
+    techStack: ["React", "CSS", "Firebase", "Firestore", "Gemini API"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/h5/index.html",
+  },
+
+  // ─── H6 — Hugrow (청심국제고등학교 · Indonesia) ────────────────────────────
+  {
+    id: 10,
+    teamName: "H6",
+    country: "Indonesia",
+    school: "청심국제고등학교",
+    projectTitle: "Hugrow — 가족 공동 웰니스 플랫폼",
+    theme: "Other",
+    problem:
+      "Families often struggle to build emotional bonds and healthy habits together, and individual wellness efforts rarely feel connected to broader social impact.",
+    problemKo:
+      "가족들은 정서적 유대와 건강한 생활습관을 함께 형성할 방법을 찾기 어렵고, 개인의 웰빙 노력이 사회적 의미로 이어지기도 쉽지 않습니다.",
+    solution:
+      "A shared wellness platform combining an Assessment that diagnoses family communication and bonding, a Challenge Center with personalized wellness challenges, and a Ripple Map visualizing regional engagement.",
+    solutionKo:
+      "가족 소통·유대 상태를 진단하는 Assessment, 맞춤형 챌린지를 제공하는 Challenge Center, 지역별 활동을 시각화하는 Ripple Map으로 구성된 공동 웰니스 플랫폼입니다.",
+    description:
+      "A family wellness platform diagnosing bonding, delivering shared challenges, and tracking social impact.",
+    descriptionKo:
+      "가족 유대 진단과 맞춤 챌린지로 가족 웰빙과 사회적 기여를 연결하는 플랫폼입니다.",
+    keyFeatures: [
+      "Family communication & bonding assessment",
+      "Personalized challenges across gratitude, mindfulness, physical & nutrition",
+      "Regional engagement visualization (Ripple Map)",
+    ],
+    keyFeaturesKo: [
+      "가족 소통·유대 상태 진단",
+      "감사·마음챙김·신체·영양 등 맞춤형 챌린지",
+      "지역별 활동 시각화 (Ripple Map)",
+    ],
+    techStack: ["React", "Vite", "Tailwind CSS", "Supabase", "Claude API"],
+    members: [],
+    teacher: "",
+    deployUrl: "",
+    githubUrl: "",
+    thumbnail: "",
+    htmlPath: "/2026/h6/index.html",
   },
 ]
 
