@@ -1,7 +1,7 @@
 # 제16회 e-ICON 세계대회 — 참가작 포트폴리오 사이트
 
 **운영 주소:** https://archive.e-icon.or.kr  
-**GitHub:** https://github.com/eicon-kefa/pilot  
+**GitHub:** https://github.com/eicon-kefa/archive  
 **주최:** 교육부 | **주관:** 한국디지털교육협회(KEFA)
 
 ---
