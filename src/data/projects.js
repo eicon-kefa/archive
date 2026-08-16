@@ -121,7 +121,7 @@ export const projects = [
     techStack: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Supabase"],
     members: ["Chanhyeok Park", "Haon Kim", "Amber Chai", "Siti Aishya Arnaib"],
     teacher: "Jeongmi Kwon · Suhaili Sulaiman",
-    deployUrl: "",
+    deployUrl: "https://m2-aura.vercel.app",
     githubUrl: "https://github.com/16th-eicon-contest/m2-AURA",
     thumbnail: "/images/m2-bloom.png",
     htmlPath: "/2026/m2/index.html",
