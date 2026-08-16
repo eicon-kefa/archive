@@ -241,9 +241,9 @@ export const projects = [
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "onnxruntime-web", "Anthropic API", "OpenAI API"],
     members: [],
     teacher: "",
-    deployUrl: "",
-    githubUrl: "",
-    thumbnail: "",
+    deployUrl: "https://snapcare.fly.dev",
+    githubUrl: "https://github.com/16th-eicon-contest/h1-SnapCare",
+    thumbnail: "/images/h1-snapcare.png",
     htmlPath: "/2026/h1/index.html",
   },
 
