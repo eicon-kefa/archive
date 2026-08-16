@@ -322,8 +322,8 @@ export const projects = [
     members: [],
     teacher: "",
     deployUrl: "",
-    githubUrl: "",
-    thumbnail: "",
+    githubUrl: "https://github.com/16th-eicon-contest/h3-Scooby-Doo",
+    thumbnail: "/images/h3-dailycog.png",
     htmlPath: "/2026/h3/index.html",
   },
 
