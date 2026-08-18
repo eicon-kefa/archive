@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/2026/:team([a-z]+[0-9]+)", "destination": "/2026/:team/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [
