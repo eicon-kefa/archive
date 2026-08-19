@@ -65,9 +65,9 @@ export default function ProjectCard({ project, onClick }) {
         </div>
 
         <div className={styles.actions} onClick={(e) => e.stopPropagation()}>
-          {project.deployUrl && (
+          {(project.deployUrl || project.htmlPath) && (
             <a
-              href={project.deployUrl}
+              href={project.deployUrl || project.htmlPath}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

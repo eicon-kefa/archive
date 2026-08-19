@@ -81,19 +81,19 @@ export default function ProjectModal({ project, onClose }) {
 
           {/* CTA buttons */}
           <div className={styles.ctas}>
-            {project.htmlPath && (
-              <a href={project.htmlPath} target="_blank" rel="noopener noreferrer" className="btn-primary">
-                {lang === 'ko' ? '앱 바로가기' : 'Open App'}
+            {(project.deployUrl || project.htmlPath) && (
+              <a
+                href={project.deployUrl || project.htmlPath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                {tx.viewApp}
               </a>
             )}
             {project.githubUrl && (
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 {tx.github}
-              </a>
-            )}
-            {project.deployUrl && (
-              <a href={project.deployUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                {tx.viewApp}
               </a>
             )}
           </div>

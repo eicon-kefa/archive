@@ -124,7 +124,7 @@ export const translations = {
     },
     modal: {
       placeholder: 'PLACEHOLDER',
-      viewApp: '앱 바로가기 ↗',
+      viewApp: '앱 보기 ↗',
       github: 'GitHub 저장소',
       problem: '문제',
       solution: '해결책',
@@ -195,7 +195,7 @@ export const translations = {
     },
     modal: {
       placeholder: 'PLACEHOLDER',
-      viewApp: 'View Live App ↗',
+      viewApp: 'View App ↗',
       github: 'GitHub Repository',
       problem: 'Problem',
       solution: 'Solution',
