@@ -154,7 +154,7 @@ thumbnail: "/images/m1-gloship.png",
 
 ## 4. 팀 앱 미리보기(HTML) 추가하기
 
-팀이 제출한 웹앱을 사이트 안에서 바로 실행해볼 수 있도록, 팀의 HTML/CSS/JS 파일을 통째로 사이트에 넣어 iframe으로 띄우는 기능입니다. (카드 상세 모달의 "앱 미리보기" 버튼 → 새 창 오버레이로 열림, [`AppPreview.jsx`](src/components/AppPreview.jsx))
+팀이 제출한 웹앱을 사이트 안에서 바로 실행해볼 수 있도록, 팀의 HTML/CSS/JS 파일을 통째로 사이트에 넣어두는 기능입니다. (카드 상세 모달의 "앱 바로가기" 버튼 → 새 탭에서 열림)
 
 ### Step 1 — 팀 폴더 만들기
 
@@ -185,7 +185,7 @@ htmlPath: "/2026/h6/index.html",
 
 ### 미리보기가 없는 경우
 
-아직 HTML 제출물이 없는 팀은 `htmlPath: ""` 로 두면, 카드 상세 모달에 "앱 미리보기" 버튼이 표시되지 않습니다. (대신 `deployUrl` / `githubUrl` 이 있으면 해당 링크 버튼이 표시됩니다.)
+아직 HTML 제출물이 없는 팀은 `htmlPath: ""` 로 두면, 카드 상세 모달에 "앱 바로가기" 버튼이 표시되지 않습니다. (대신 `deployUrl` / `githubUrl` 이 있으면 해당 링크 버튼이 표시됩니다.)
 
 ---
 
@@ -209,12 +209,14 @@ htmlPath: "/2026/h6/index.html",
 | `keyFeatures` | string[] | 주요 기능 목록 — 영문 배열 3~5개 | `[]` |
 | `keyFeaturesKo` | string[] | 주요 기능 목록 — 한국어 배열 3~5개 | `[]` |
 | `techStack` | string[] | 사용 기술 배열 | `[]` |
-| `members` | string[] | 팀원 이름 배열 | `[]` |
-| `teacher` | string | 지도교사 이름 | `""` |
+| `members` | string[] | 팀원 이름 배열 (영문) | `[]` |
+| `membersKo` | string[] | 팀원 이름 배열 (한국 팀원은 국문, 해외 팀원은 영문) | `[]` |
+| `teacher` | string | 지도교사 이름 "국내 · 해외" 형식 (영문) | `""` |
+| `teacherKo` | string | 지도교사 이름 "국내 · 해외" 형식 (국내는 국문) | `""` |
 | `deployUrl` | string | 배포된 웹앱 URL | `""` |
 | `githubUrl` | string | GitHub 저장소 URL | `""` |
 | `thumbnail` | string | `/images/파일명.png` 형식 경로 | `""` |
-| `htmlPath` | string | `/2026/{팀코드}/index.html` 형식 경로 — 앱 미리보기용 | `""` |
+| `htmlPath` | string | `/2026/{팀코드}/index.html` 형식 경로 — 앱 바로가기용 | `""` |
 
 ---
 
@@ -280,7 +282,6 @@ project/
 │   │   ├── ProjectGallery.jsx / .module.css
 │   │   ├── ProjectCard.jsx / .module.css
 │   │   ├── ProjectModal.jsx / .module.css
-│   │   ├── AppPreview.jsx / .module.css   ← 팀 앱 HTML iframe 미리보기 (수정 불필요)
 │   │   └── Footer.jsx / .module.css
 │   ├── context/
 │   │   └── LangContext.jsx      ← 한/영 언어 전환 (수정 불필요)

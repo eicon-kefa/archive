@@ -14,7 +14,7 @@ const THEME_COLORS = {
   'Other': '#6b7280',
 }
 
-export default function ProjectModal({ project, onClose, onPreview }) {
+export default function ProjectModal({ project, onClose }) {
   const { lang } = useLang()
   const tx = translations[lang].modal
 
@@ -38,6 +38,8 @@ export default function ProjectModal({ project, onClose, onPreview }) {
   const problem      = lang === 'ko' && project.problemKo      ? project.problemKo      : project.problem
   const solution     = lang === 'ko' && project.solutionKo     ? project.solutionKo     : project.solution
   const keyFeatures  = lang === 'ko' && project.keyFeaturesKo  ? project.keyFeaturesKo  : project.keyFeatures
+  const members      = lang === 'ko' && project.membersKo      ? project.membersKo      : project.members
+  const teacher      = lang === 'ko' && project.teacherKo      ? project.teacherKo      : project.teacher
 
   return (
     <div className={styles.overlay} onClick={onClose} role="dialog" aria-modal="true">
@@ -80,21 +82,18 @@ export default function ProjectModal({ project, onClose, onPreview }) {
           {/* CTA buttons */}
           <div className={styles.ctas}>
             {project.htmlPath && (
-              <button
-                className="btn-primary"
-                onClick={() => { onClose(); onPreview(project) }}
-              >
-                {lang === 'ko' ? '앱 미리보기' : 'Preview App'}
-              </button>
-            )}
-            {project.deployUrl && (
-              <a href={project.deployUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                {tx.viewApp}
+              <a href={project.htmlPath} target="_blank" rel="noopener noreferrer" className="btn-primary">
+                {lang === 'ko' ? '앱 바로가기' : 'Open App'}
               </a>
             )}
             {project.githubUrl && (
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 {tx.github}
+              </a>
+            )}
+            {project.deployUrl && (
+              <a href={project.deployUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                {tx.viewApp}
               </a>
             )}
           </div>
@@ -143,11 +142,11 @@ export default function ProjectModal({ project, onClose, onPreview }) {
 
           {/* Team */}
           <div className={styles.twoCol}>
-            {project.members?.length > 0 && (
+            {members?.length > 0 && (
               <div className={styles.section}>
                 <h3 className={styles.sectionTitle}>{tx.members}</h3>
                 <ul className={styles.memberList}>
-                  {project.members.map((m) => (
+                  {members.map((m) => (
                     <li key={m} className={styles.member}>
                       <span className={styles.avatar}>{m[0]}</span>
                       {m}
@@ -156,12 +155,12 @@ export default function ProjectModal({ project, onClose, onPreview }) {
                 </ul>
               </div>
             )}
-            {project.teacher && (
+            {teacher && (
               <div className={styles.section}>
                 <h3 className={styles.sectionTitle}>{tx.teacher}</h3>
                 <div className={styles.member}>
-                  <span className={styles.avatar}>{project.teacher[0]}</span>
-                  {project.teacher}
+                  <span className={styles.avatar}>{teacher[0]}</span>
+                  {teacher}
                 </div>
               </div>
             )}
