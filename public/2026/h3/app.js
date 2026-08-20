@@ -1614,6 +1614,7 @@ function renderAuth() {
       <div class="field"><label for="password">비밀번호</label><div class="password-input"><input id="password" name="password" required minlength="6" type="password" placeholder="6자 이상 입력해 주세요" autocomplete="${signup?'new-password':'current-password'}"><button type="button" id="passwordToggle" aria-label="비밀번호 표시">Show</button></div></div>
       <button class="primary-btn" type="submit">${signup ? 'Daily Cog 시작하기' : '로그인하고 시작하기'} →</button>
       <div class="auth-note"><span>●</span><span>${SUPABASE_ENABLED ? '계정과 활동 기록은 Supabase에 안전하게 저장됩니다.' : 'Supabase 설정 전에는 계정 정보가 현재 브라우저에만 저장됩니다.'}</span></div>
+      ${SUPABASE_ENABLED ? '' : '<div class="auth-note"><span>★</span><span>데모 계정: demo@dailycog.kr · 비밀번호 demo1234</span></div>'}
     </form></aside>
   </div></div>`;
   $$('[data-mode]').forEach(b => b.onclick = () => { state.authMode=b.dataset.mode; render(); });
