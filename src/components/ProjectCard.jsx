@@ -19,6 +19,8 @@ export default function ProjectCard({ project, onClick }) {
   const themeColor = THEME_COLORS[project.theme] || THEME_COLORS['Other']
 
   const description   = lang === 'ko' && project.descriptionKo ? project.descriptionKo : project.description
+  const projectTitle  = lang === 'en' && project.projectTitleEn ? project.projectTitleEn : project.projectTitle
+  const school        = lang === 'en' && project.schoolEn      ? project.schoolEn        : project.school
   const countryDisplay = getCountryName(project.country, lang)
   const themeDisplay   = getThemeName(project.theme, lang)
 
@@ -27,12 +29,12 @@ export default function ProjectCard({ project, onClick }) {
       {/* 썸네일 */}
       <div className={styles.thumb}>
         {project.thumbnail ? (
-          <img src={project.thumbnail} alt={project.projectTitle} className={styles.thumbImg} />
+          <img src={project.thumbnail} alt={projectTitle} className={styles.thumbImg} />
         ) : (
           <div className={styles.thumbPlaceholder}>
             <div className={styles.placeholderInner}>
               <span className={styles.placeholderLabel}>{tx.placeholder}</span>
-              <span className={styles.placeholderTitle}>{project.projectTitle}</span>
+              <span className={styles.placeholderTitle}>{projectTitle}</span>
             </div>
           </div>
         )}
@@ -47,7 +49,7 @@ export default function ProjectCard({ project, onClick }) {
           <span className={styles.country}>{countryDisplay}</span>
         </div>
 
-        <h3 className={styles.title}>{project.projectTitle}</h3>
+        <h3 className={styles.title}>{projectTitle}</h3>
         <p className={styles.description}>{description}</p>
 
         <div className={styles.info}>
@@ -58,7 +60,7 @@ export default function ProjectCard({ project, onClick }) {
           <div className={styles.infoRow}>
             <span className={styles.infoLabel}>{tx.schoolLabel}</span>
             <span className={styles.infoValue}>
-              {project.school}
+              {school}
               {project.schoolOverseas && ` · ${project.schoolOverseas}`}
             </span>
           </div>

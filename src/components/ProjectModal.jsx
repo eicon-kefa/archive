@@ -40,6 +40,8 @@ export default function ProjectModal({ project, onClose }) {
   const keyFeatures  = lang === 'ko' && project.keyFeaturesKo  ? project.keyFeaturesKo  : project.keyFeatures
   const members      = lang === 'ko' && project.membersKo      ? project.membersKo      : project.members
   const teacher      = lang === 'ko' && project.teacherKo      ? project.teacherKo      : project.teacher
+  const projectTitle = lang === 'en' && project.projectTitleEn ? project.projectTitleEn : project.projectTitle
+  const school       = lang === 'en' && project.schoolEn       ? project.schoolEn       : project.school
 
   return (
     <div className={styles.overlay} onClick={onClose} role="dialog" aria-modal="true">
@@ -62,20 +64,20 @@ export default function ProjectModal({ project, onClose }) {
         {/* Thumbnail */}
         <div className={styles.thumb}>
           {project.thumbnail ? (
-            <img src={project.thumbnail} alt={project.projectTitle} />
+            <img src={project.thumbnail} alt={projectTitle} />
           ) : (
             <div className={styles.thumbPlaceholder}>
               <span className={styles.placeholderLabel}>{tx.placeholder}</span>
-              <span className={styles.placeholderTitle}>{project.projectTitle}</span>
+              <span className={styles.placeholderTitle}>{projectTitle}</span>
             </div>
           )}
         </div>
 
         {/* Scrollable content */}
         <div className={styles.content}>
-          <h2 className={styles.title}>{project.projectTitle}</h2>
+          <h2 className={styles.title}>{projectTitle}</h2>
           <p className={styles.teamLine}>
-            <strong>{project.teamName}</strong> · {project.school}
+            <strong>{project.teamName}</strong> · {school}
             {project.schoolOverseas && ` · ${project.schoolOverseas}`}
           </p>
 

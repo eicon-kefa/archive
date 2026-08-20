@@ -21,7 +21,7 @@ function AppInner() {
       if (selectedCountry && p.country !== selectedCountry) return false
       if (selectedTheme && p.theme !== selectedTheme) return false
       if (q) {
-        const haystack = [p.teamName, p.projectTitle, p.school, p.country, p.theme]
+        const haystack = [p.teamName, p.projectTitle, p.projectTitleEn, p.school, p.schoolEn, p.country, p.theme]
           .join(' ')
           .toLowerCase()
         if (!haystack.includes(q)) return false

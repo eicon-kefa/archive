@@ -12,9 +12,11 @@
  *   id              — 고유 번호, 마지막 항목보다 1 증가
  *   teamName        — 팀 코드 (예: "M1", "H6")
  *   country         — 국가명 영문 (필터에 사용됨, 반드시 영문으로)
- *   school          — 국내 학교/기관명 (한국 멘토 학교)
+ *   school          — 국내 학교/기관명 (한국어)
+ *   schoolEn        — 국내 학교/기관명 (영문) — 영문 홈페이지에서 사용
  *   schoolOverseas  — 해외 파트너 학교/기관명 (없으면 "")
- *   projectTitle    — 프로젝트/웹앱 제목
+ *   projectTitle    — 프로젝트/웹앱 제목 (한국어)
+ *   projectTitleEn  — 프로젝트/웹앱 제목 (영문) — 영문 홈페이지에서 사용
  *   theme           — 아래 테마 값 중 하나 선택
  *                     "Mental Health" | "Fitness" | "Nutrition" | "Elderly Care" |
  *                     "Disability" | "Maternal Health" | "Disease Prevention" | "Other"
@@ -51,8 +53,10 @@ export const projects = [
     teamName: "M1",
     country: "Indonesia",
     school: "하계중학교",
+    schoolEn: "Hagye Middle School",
     schoolOverseas: "SMK Telkom Malang",
     projectTitle: "GloShip — 청소년 정서 자가관리 AI 플랫폼",
+    projectTitleEn: "GloShip — AI Platform for Teen Emotional Self-Care",
     theme: "Mental Health",
     problem:
       "Teenagers often lack tools to self-manage their emotions and catch early mental health warning signs before problems require clinical diagnosis.",
@@ -93,8 +97,10 @@ export const projects = [
     teamName: "M2",
     country: "Malaysia",
     school: "울산학성중학교",
+    schoolEn: "Ulsan Hakseong Middle School",
     schoolOverseas: "SMK Kunak",
     projectTitle: "Bloom — 청소년 금연·니코틴 관리 웹앱",
+    projectTitleEn: "Bloom — Teen Smoking & Nicotine Cessation Web App",
     theme: "Disease Prevention",
     problem:
       "Teenagers struggling with smoking and nicotine dependence often lack immediate, anonymous tools to manage cravings and build cessation habits.",
@@ -139,8 +145,10 @@ export const projects = [
     teamName: "M3",
     country: "Philippines",
     school: "대구공산중학교",
+    schoolEn: "Daegu Gongsan Middle School",
     schoolOverseas: "Cavite Science Integrated School",
     projectTitle: "IEUM — 웨어러블 기반 정신건강 관리 AI 플랫폼",
+    projectTitleEn: "IEUM — Wearable-Based AI Mental Health Platform",
     theme: "Mental Health",
     problem:
       "Young people often struggle to recognize their own mental health state and connect with professional support when they need it.",
@@ -181,8 +189,10 @@ export const projects = [
     teamName: "M4",
     country: "Bangladesh",
     school: "성재중학교",
+    schoolEn: "Seongjae Middle School",
     schoolOverseas: "Dhaka Residential Model College",
     projectTitle: "LightHouse — 청소년 디지털·수면 습관 AI 코칭 플랫폼",
+    projectTitleEn: "LightHouse — AI Coaching Platform for Teen Digital & Sleep Habits",
     theme: "Mental Health",
     problem:
       "Teenagers struggle to build healthy digital and sleep habits, and lack consistent coaching tools to sustain the change.",
@@ -225,8 +235,10 @@ export const projects = [
     teamName: "H1",
     country: "Moldova",
     school: "충남삼성고등학교",
+    schoolEn: "Chungnam Samsung High School",
     schoolOverseas: "IPLT \"Gheorghe Asachi\"",
     projectTitle: "SnapCare — 이미지·음성 기반 AI 건강관리 웹앱",
+    projectTitleEn: "SnapCare — Image & Voice-Based AI Health Management App",
     theme: "Nutrition",
     problem:
       "Low-literacy and medically underserved populations struggle to understand meal/nutrition information and prescriptions, and to manage medication routines.",
@@ -267,8 +279,10 @@ export const projects = [
     teamName: "H2",
     country: "Rwanda",
     school: "대전대신고등학교",
+    schoolEn: "Daejeon Daesin High School",
     schoolOverseas: "Rwanda Coding Academy",
     projectTitle: "ReNew — 오프라인 우선 청소년 정신건강 플랫폼",
+    projectTitleEn: "ReNew — Offline-First Teen Mental Health Platform",
     theme: "Mental Health",
     problem:
       "Vulnerable youth struggle to access daily recovery support connected to community health workers, and few mental health tools work reliably in low-connectivity environments.",
@@ -309,8 +323,10 @@ export const projects = [
     teamName: "H3",
     country: "Uzbekistan",
     school: "부산기계공업고등학교",
+    schoolEn: "Busan Mechanical Technical High School",
     schoolOverseas: "The State Secondary School 355 & Presidential School in Tashkent",
     projectTitle: "Daily Cog — AI 맞춤형 두뇌훈련 웹앱",
+    projectTitleEn: "Daily Cog — AI-Personalized Brain Training Web App",
     theme: "Disease Prevention",
     problem:
       "Preventing dementia and maintaining cognitive health requires consistent brain training, but few tools sustain long-term engagement.",
@@ -351,8 +367,10 @@ export const projects = [
     teamName: "H4",
     country: "Indonesia",
     school: "대덕소프트웨어마이스터고등학교",
+    schoolEn: "Daeduk Software Meister High School",
     schoolOverseas: "USG Education",
     projectTitle: "HERWORLD — 갱년기 여성 건강관리 AI 웹앱",
+    projectTitleEn: "HERWORLD — AI Health App for Menopause Management",
     theme: "Other",
     problem:
       "Women going through menopause often lack the information and tools needed to manage symptoms, medications, and prepare for medical visits.",
@@ -395,8 +413,10 @@ export const projects = [
     teamName: "H5",
     country: "Bangladesh",
     school: "선린인터넷고등학교",
+    schoolEn: "Sunrin Internet High School",
     schoolOverseas: "Madhabdi Sati Prasanna Institution & Holy Cross College",
     projectTitle: "MonAndo — VR·AI 기반 정신건강 관리 웹앱",
+    projectTitleEn: "MonAndo — VR & AI-Based Mental Health Management App",
     theme: "Mental Health",
     problem:
       "People experiencing anxiety and burnout often struggle to find affordable, consistently accessible mental health tools.",
@@ -437,8 +457,10 @@ export const projects = [
     teamName: "H6",
     country: "Indonesia",
     school: "청심국제고등학교",
+    schoolEn: "Chungshim International Academy",
     schoolOverseas: "Eco Socio Tech School (EST)",
     projectTitle: "Hugrow — 가족 공동 웰니스 플랫폼",
+    projectTitleEn: "Hugrow — Shared Family Wellness Platform",
     theme: "Other",
     problem:
       "Families often struggle to build emotional bonds and healthy habits together, and individual wellness efforts rarely feel connected to broader social impact.",
