@@ -403,7 +403,7 @@ export const THEME_SVG_MAP = {
   'Nutrition':          SVGNutritionTracker,
   'Elderly Care':       SVGElderCare,
   'Fitness':            SVGFitness,
-  'Maternal Health':    SVGMaternalHealth,
+  "Women's Health":     SVGMaternalHealth,
   'Disability':         SVGDisability,
 }
 
@@ -413,7 +413,7 @@ export const THEME_COLORS = {
   'Nutrition':          '#fb923c',
   'Elderly Care':       '#3b82f6',
   'Fitness':            '#34d399',
-  'Maternal Health':    '#f59e0b',
+  "Women's Health":     '#f59e0b',
   'Disability':         '#ec4899',
   'Other':              '#6b7280',
 }

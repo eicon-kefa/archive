@@ -105,7 +105,7 @@ VS Code, 메모장 등 텍스트 편집기로 파일을 엽니다.
 "Nutrition"          영양
 "Elderly Care"       노인 돌봄
 "Disability"         장애
-"Maternal Health"    모성 건강
+"Women's Health"     여성 건강
 "Disease Prevention" 질병 예방
 "Other"              기타
 ```

@@ -19,7 +19,7 @@
  *   projectTitleEn  — 프로젝트/웹앱 제목 (영문) — 영문 홈페이지에서 사용
  *   theme           — 아래 테마 값 중 하나 선택
  *                     "Mental Health" | "Fitness" | "Nutrition" | "Elderly Care" |
- *                     "Disability" | "Maternal Health" | "Disease Prevention" | "Other"
+ *                     "Disability" | "Women's Health" | "Disease Prevention" | "Other"
  *   problem         — SDG 3 관련 문제 설명 (영문, 1–2문장)
  *   problemKo       — SDG 3 관련 문제 설명 (한국어, 1–2문장)
  *   solution        — 해결 방법 설명 (영문, 1–2문장)
@@ -371,7 +371,7 @@ export const projects = [
     schoolOverseas: "USG Education",
     projectTitle: "HERWORLD — 갱년기 여성 건강관리 AI 웹앱",
     projectTitleEn: "HERWORLD — AI Health App for Menopause Management",
-    theme: "Other",
+    theme: "Women's Health",
     problem:
       "Women going through menopause often lack the information and tools needed to manage symptoms, medications, and prepare for medical visits.",
     problemKo:

@@ -71,7 +71,7 @@ export const THEME_KO = {
   'Nutrition':          '영양',
   'Elderly Care':       '노인 돌봄',
   'Disability':         '장애',
-  'Maternal Health':    '모성 건강',
+  "Women's Health":     '여성 건강',
   'Disease Prevention': '질병 예방',
   'Other':              '기타',
 }

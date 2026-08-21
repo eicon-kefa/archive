@@ -8,7 +8,7 @@ const THEME_COLORS = {
   'Nutrition':          '#fb923c',
   'Elderly Care':       '#3b82f6',
   'Disability':         '#ec4899',
-  'Maternal Health':    '#f59e0b',
+  "Women's Health":     '#f59e0b',
   'Disease Prevention': '#10b981',
   'Other':              '#6b7280',
 }
