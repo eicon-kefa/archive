@@ -133,6 +133,10 @@ export const translations = {
       members: '팀원',
       teacher: '지도교사',
       close: '닫기',
+      deliverables: '제출 산출물',
+      poster: '포스터',
+      proposal: 'Final Project Proposal',
+      demoVideo: '웹앱 데모 영상',
     },
     gallery: {
       emptyTitle: '프로젝트가 없습니다',
@@ -204,6 +208,10 @@ export const translations = {
       members: 'Team Members',
       teacher: 'Supervising Teacher',
       close: 'Close',
+      deliverables: 'Contest Deliverables',
+      poster: 'Poster',
+      proposal: 'Final Project Proposal',
+      demoVideo: 'Web App Demo Video',
     },
     gallery: {
       emptyTitle: 'No projects found',

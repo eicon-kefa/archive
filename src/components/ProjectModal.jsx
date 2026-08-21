@@ -140,6 +140,32 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           )}
 
+          {/* Deliverables */}
+          {(project.posterUrl || project.proposalUrl || project.demoVideoUrl) && (
+            <>
+              <div className={styles.section}>
+                <h3 className={styles.sectionTitle}>{tx.deliverables}</h3>
+                <div className={styles.tags}>
+                  {project.posterUrl && (
+                    <a href={project.posterUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {tx.poster} ↗
+                    </a>
+                  )}
+                  {project.proposalUrl && (
+                    <a href={project.proposalUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {tx.proposal} ↗
+                    </a>
+                  )}
+                  {project.demoVideoUrl && (
+                    <a href={project.demoVideoUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                      {tx.demoVideo} ↗
+                    </a>
+                  )}
+                </div>
+              </div>
+            </>
+          )}
+
           <div className={styles.divider} />
 
           {/* Team */}

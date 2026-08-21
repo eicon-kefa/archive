@@ -217,6 +217,9 @@ htmlPath: "/2026/h6/index.html",
 | `githubUrl` | string | GitHub 저장소 URL | `""` |
 | `thumbnail` | string | `/images/파일명.png` 형식 경로 | `""` |
 | `htmlPath` | string | `/2026/{팀코드}/index.html` 형식 경로 — 앱 바로가기용 | `""` |
+| `posterUrl` | string | 포스터 PDF 링크 (Google Drive 등, 파일 용량이 커서 repo에는 안 넣음) | `""` |
+| `proposalUrl` | string | Final Project Proposal PDF 링크 | `""` |
+| `demoVideoUrl` | string | 웹앱 데모 영상 링크 | `""` |
 
 ---
 
