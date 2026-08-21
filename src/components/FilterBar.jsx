@@ -16,6 +16,15 @@ export default function FilterBar({
   const { lang } = useLang()
   const tx = translations[lang].filter
 
+  // 국가/테마 목록은 projects.js에서 영문 원본 값 기준으로 정렬되어 들어오므로,
+  // 화면에 표시되는 현재 언어 라벨 기준으로 다시 정렬합니다.
+  const sortedCountries = [...countries].sort((a, b) =>
+    getCountryName(a, lang).localeCompare(getCountryName(b, lang), lang)
+  )
+  const sortedThemes = [...themes].sort((a, b) =>
+    getThemeName(a, lang).localeCompare(getThemeName(b, lang), lang)
+  )
+
   return (
     <div className={styles.wrapper}>
       <div className="container">
@@ -57,7 +66,7 @@ export default function FilterBar({
             >
               {tx.all}
             </button>
-            {countries.map((c) => (
+            {sortedCountries.map((c) => (
               <button
                 key={c}
                 className={`${styles.pill} ${selectedCountry === c ? styles.pillActive : ''}`}
@@ -79,7 +88,7 @@ export default function FilterBar({
             >
               {tx.all}
             </button>
-            {themes.map((t) => (
+            {sortedThemes.map((t) => (
               <button
                 key={t}
                 className={`${styles.pill} ${selectedTheme === t ? styles.pillActive : ''}`}

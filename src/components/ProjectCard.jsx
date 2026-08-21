@@ -61,7 +61,7 @@ export default function ProjectCard({ project, onClick }) {
             <span className={styles.infoLabel}>{tx.schoolLabel}</span>
             <span className={styles.infoValue}>
               {school}
-              {project.schoolOverseas && ` · ${project.schoolOverseas}`}
+              {project.schoolOverseas && ` · (${countryDisplay}) ${project.schoolOverseas}`}
             </span>
           </div>
         </div>
