@@ -179,7 +179,7 @@ export const projects = [
     teacherKo: "송광윤 · John Edsel Varias",
     deployUrl: "",
     githubUrl: "https://github.com/16th-eicon-contest/m3-app",
-    thumbnail: "",
+    thumbnail: "/images/m3-ieum.png",
     htmlPath: "/2026/m3/index.html",
   },
 
@@ -225,7 +225,7 @@ export const projects = [
     teacherKo: "윤선영 · Sayed Mahbub Hasan Amiri",
     deployUrl: "",
     githubUrl: "https://github.com/16th-eicon-contest/m4-arupbit",
-    thumbnail: "",
+    thumbnail: "/images/m4-lighthouse.jpg",
     htmlPath: "/2026/m4/index.html",
   },
 
@@ -403,7 +403,7 @@ export const projects = [
     teacherKo: "이동국 · Marsela Nur Rita",
     deployUrl: "",
     githubUrl: "https://github.com/16th-eicon-contest/h4-flowcare-medicine-fe",
-    thumbnail: "",
+    thumbnail: "/images/h4-herworld.jpg",
     htmlPath: "/2026/h4/index.html",
   },
 
@@ -447,7 +447,7 @@ export const projects = [
     teacherKo: "심희원 · Maherunnesa",
     deployUrl: "",
     githubUrl: "https://github.com/16th-eicon-contest/h5-monando",
-    thumbnail: "",
+    thumbnail: "/images/h5-monando.png",
     htmlPath: "/2026/h5/index.html",
   },
 
