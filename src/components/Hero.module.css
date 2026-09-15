@@ -21,11 +21,11 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-xs);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: var(--color-muted);
   background: var(--color-surface-card);
-  padding: 6px 14px;
+  padding: 8px 16px;
   border-radius: var(--rounded-pill);
   width: fit-content;
 }

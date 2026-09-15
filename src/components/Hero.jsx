@@ -61,7 +61,7 @@ export default function Hero({ totalProjects }) {
             </div>
             <div className={styles.statDivider} />
             <div className={styles.stat}>
-              <span className={styles.statValue}>Global</span>
+              <span className={styles.statValue}>{tx.stats.participantsValue}</span>
               <span className={styles.statLabel}>{tx.stats.participants}</span>
             </div>
           </div>

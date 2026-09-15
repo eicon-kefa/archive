@@ -97,14 +97,14 @@ export const translations = {
       kefa: 'KEFA ↗',
     },
     hero: {
-      badge: '제16회 e-ICON 세계대회 · 2026',
+      badge: '제16회 e-ICON 세계대회',
       headline: '웹앱 포트폴리오',
       sub: 'SDG 3: 건강과 웰빙',
       body: (n) =>
-        `e-ICON 세계대회는 전 세계 학생 팀들이 UN 지속가능발전목표(SDGs)와 연계된 실제 문제를 해결하는 웹 애플리케이션을 설계·개발하는 대회입니다. 이 포트폴리오는 SDG 3(건강과 웰빙)을 주제로 제출된 ${n}개의 프로젝트를 소개합니다.`,
+        `e-ICON 세계대회는 국내 및 해외 중·고등학생이 글로벌팀을 이루어 지속가능개발목표(SDGs) 달성을 위한 앱을 개발하는 국제 AI·SW 경진대회입니다. 올해 학생들이 SDG3 건강과 웰빙을 주제로 만든 ${n}개의 웹앱을 소개합니다.`,
       exploreBtn: '프로젝트 살펴보기',
       learnBtn: 'e-ICON 대회 소개 ↗',
-      stats: { projects: '프로젝트', focus: '집중 목표', participants: '참가자' },
+      stats: { projects: '웹앱', focus: '주제', participants: '참가자', participantsValue: '8개국' },
       mockupTitle: '건강과 웰빙',
     },
     filter: {
@@ -172,14 +172,14 @@ export const translations = {
       kefa: 'KEFA ↗',
     },
     hero: {
-      badge: '16th e-ICON World Contest · 2026',
+      badge: '16th e-ICON World Contest',
       headline: 'Web App Portfolio',
       sub: 'SDG 3: Health & Well-being',
       body: (n) =>
-        `The e-ICON World Contest challenges student teams from across the globe to design and build web applications that address real-world problems aligned with the UN Sustainable Development Goals. This portfolio showcases the ${n} projects submitted for SDG 3 — Good Health and Well-being.`,
+        `The e-ICON World Contest is an international AI/SW competition where middle and high school students from Korea and abroad form global teams to build apps addressing the UN Sustainable Development Goals (SDGs). This year, students introduce ${n} web apps built around SDG 3 — Health and Well-being.`,
       exploreBtn: 'Explore Projects',
       learnBtn: 'Learn about e-ICON ↗',
-      stats: { projects: 'Projects', focus: 'Focus Area', participants: 'Participants' },
+      stats: { projects: 'Web Apps', focus: 'Theme', participants: 'Participants', participantsValue: '8 Countries' },
       mockupTitle: 'Health & Well-being',
     },
     filter: {
