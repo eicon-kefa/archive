@@ -15,10 +15,7 @@ export default function Header() {
       <div className={`container ${styles.inner}`}>
 
         <a href="/" className={styles.brand}>
-          <span className={styles.brandMark}>e</span>
-          <span className={styles.brandName}>
-            e-ICON <span className={styles.brandSub}>World Contest</span>
-          </span>
+          <img src="/eicon-logo.png" alt="e-ICON World Contest" className={styles.brandLogo} />
         </a>
 
         <nav className={styles.nav}>

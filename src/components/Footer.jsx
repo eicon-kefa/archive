@@ -14,13 +14,10 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.top}>
 
-          {/* 브랜드 텍스트 */}
+          {/* 브랜드 로고 */}
           <div className={styles.brand}>
-            <div className={styles.brandMark}>e</div>
-            <div>
-              <div className={styles.brandName}>e-ICON World Contest</div>
-              <div className={styles.brandSub}>{tx.edition}</div>
-            </div>
+            <img src="/eicon-logo-white.png" alt="e-ICON World Contest" className={styles.brandLogo} />
+            <div className={styles.brandSub}>{tx.edition}</div>
           </div>
 
           <div className={styles.links}>
