@@ -171,70 +171,18 @@
   letter-spacing: -0.01em;
 }
 
-.mockupGrid {
+.mockupIllustrations {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-sm);
 }
 
-.mockupItem {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.mockupThumb {
+.mockupIllustration {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 120 / 130;
   background: var(--color-surface-card);
   border-radius: var(--rounded-md);
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.2s ease;
-}
-
-.mockupThumbInner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  padding: 4px;
-  width: 100%;
-  height: 100%;
-}
-
-.mockupThumbDot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  opacity: 0.85;
-}
-
-.mockupThumbLabel {
-  font-size: 8px;
-  font-weight: 600;
-  color: var(--color-muted);
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  word-break: keep-all;
-}
-
-.mockupLine {
-  height: 8px;
-  background: var(--color-surface-card);
-  border-radius: var(--rounded-xs);
-}
-
-.mockupLineShort {
-  height: 8px;
-  width: 60%;
-  background: var(--color-hairline-soft);
-  border-radius: var(--rounded-xs);
 }
 
 /* ─── Responsive ─── */

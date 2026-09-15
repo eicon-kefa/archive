@@ -1,8 +1,7 @@
 import { useLang } from '../context/LangContext'
-import { translations, getThemeName } from '../i18n/translations'
-import { projects } from '../data/projects'
+import { translations } from '../i18n/translations'
 import styles from './Hero.module.css'
-import { THEME_SVG_MAP, THEME_COLORS, SVGDefault } from './HeroMockupSVGs'
+import { SVGSdgGoals, SVGWebAppBuild } from './HeroMockupSVGs'
 
 export default function Hero({ totalProjects }) {
   const { lang } = useLang()
@@ -11,9 +10,6 @@ export default function Hero({ totalProjects }) {
   const eiconUrl = lang === 'ko'
     ? 'https://e-icon.or.kr/ko/'
     : 'https://e-icon.or.kr/en/'
-
-  // 목업 카드에 표시할 프로젝트 (최대 6개)
-  const mockupProjects = projects.slice(0, 6)
 
   return (
     <section className={styles.hero} id="about">
@@ -79,24 +75,13 @@ export default function Hero({ totalProjects }) {
             <div className={styles.mockupBody}>
               <div className={styles.mockupTag}>SDG 3</div>
               <div className={styles.mockupTitle}>{tx.mockupTitle}</div>
-              <div className={styles.mockupGrid}>
-                {mockupProjects.map((p) => {
-                  const color = THEME_COLORS[p.theme] || THEME_COLORS['Other']
-                  const SvgComponent = THEME_SVG_MAP[p.theme] || SVGDefault
-                  return (
-                    <div key={p.id} className={styles.mockupItem}>
-                      {/* 썸네일 영역 — 테마별 SVG 일러스트 */}
-                      <div
-                        className={styles.mockupThumb}
-                        style={{ borderBottom: `2px solid ${color}55` }}
-                      >
-                        <SvgComponent color={color} />
-                      </div>
-                      <div className={styles.mockupLine} />
-                      <div className={styles.mockupLineShort} />
-                    </div>
-                  )
-                })}
+              <div className={styles.mockupIllustrations}>
+                <div className={styles.mockupIllustration}>
+                  <SVGSdgGoals />
+                </div>
+                <div className={styles.mockupIllustration}>
+                  <SVGWebAppBuild />
+                </div>
               </div>
             </div>
           </div>
