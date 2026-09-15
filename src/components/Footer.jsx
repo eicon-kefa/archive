@@ -17,7 +17,6 @@ export default function Footer() {
           {/* 브랜드 로고 */}
           <div className={styles.brand}>
             <img src="/eicon-logo-white.png" alt="e-ICON World Contest" className={styles.brandLogo} />
-            <div className={styles.brandSub}>{tx.edition}</div>
           </div>
 
           <div className={styles.links}>
