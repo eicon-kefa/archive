@@ -21,9 +21,12 @@ export default function FilterBar({
   const sortedCountries = [...countries].sort((a, b) =>
     getCountryName(a, lang).localeCompare(getCountryName(b, lang), lang)
   )
-  const sortedThemes = [...themes].sort((a, b) =>
-    getThemeName(a, lang).localeCompare(getThemeName(b, lang), lang)
-  )
+  // "기타"(Other)는 어떤 언어로 정렬해도 맨 뒤에 고정합니다.
+  const sortedThemes = [...themes].sort((a, b) => {
+    if (a === 'Other') return 1
+    if (b === 'Other') return -1
+    return getThemeName(a, lang).localeCompare(getThemeName(b, lang), lang)
+  })
 
   return (
     <div className={styles.wrapper}>
@@ -58,7 +61,7 @@ export default function FilterBar({
 
         {/* 국가 필터 */}
         <div className={styles.filterGroup}>
-          <span className={styles.filterLabel}>{tx.countryLabel}</span>
+          <span className={styles.filterLabel}>{tx.countryLabel} ({sortedCountries.length})</span>
           <div className={styles.pillGroup}>
             <button
               className={`${styles.pill} ${selectedCountry === '' ? styles.pillActive : ''}`}

@@ -16,12 +16,13 @@
 .searchRow {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-md);
 }
 
 .searchInputWrap {
   position: relative;
-  flex: 1;
+  width: 100%;
   max-width: 480px;
 }
 
