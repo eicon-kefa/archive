@@ -70,9 +70,9 @@ export const projects = [
     solutionKo:
       "감정을 기록·시각화하는 MoodMap, AI 기반 또래 활동 추천 MoveMates, 위험 신호를 감지해 전문기관과 연계하는 BridgeCare로 구성된 AI 웹 플랫폼입니다.",
     description:
-      "Helping teens track emotions, get AI-matched peer support, and connect early warning signs to professional help.",
+      "An AI-based web platform supporting teen emotional self-care and connection to peers and professionals.",
     descriptionKo:
-      "감정 기록, AI 또래 매칭, 위험 신호 조기연계까지 지원하는 청소년 정서관리 플랫폼입니다.",
+      "청소년의 정서 자가관리와 또래·전문가 연결을 지원하는 AI 기반 웹 플랫폼",
     keyFeatures: [
       "Daily mood tracking & pattern visualization (MoodMap)",
       "AI-matched peer activity recommendations (MoveMates)",
@@ -117,9 +117,9 @@ export const projects = [
     solutionKo:
       "흡연 기록, 근거 기반 WHO 4D 대처 퀘스트, 판단 근거를 그대로 보여주는 투명한 분석, 디지털 회복 정원으로 금연을 돕는 익명 웹앱입니다. 전부 브라우저 안에서 동작해 데이터를 기기 밖으로 내보내지 않습니다.",
     description:
-      "An anonymous app helping teens quit smoking through WHO 4D coping quests, explainable insights, and a recovery garden.",
+      "An anonymous AI web app supporting teens in quitting smoking and managing nicotine use habits.",
     descriptionKo:
-      "흡연 기록, WHO 4D 대처 퀘스트, 설명가능 분석으로 청소년의 금연을 돕는 익명 웹앱입니다.",
+      "청소년의 금연과 니코틴 사용 습관 관리를 지원하는 익명 AI 웹앱",
     keyFeatures: [
       "Daily check-in that logs the trigger and returns a matched coping strategy",
       "Evidence-based WHO 4D quests matched to the user's situation and urge level",
@@ -168,9 +168,9 @@ export const projects = [
     solutionKo:
       "웨어러블 생체 데이터로 감정 아바타를 생성하는 EUM Living Twin, AI 감정 케어와 전문 상담사 연결을 지원하는 PsychConnect, 익명 또래 커뮤니티 IEUM Bamboo Forest로 구성된 AI 플랫폼입니다.",
     description:
-      "A wearable-driven AI platform visualizing emotions and connecting at-risk youth to counselors and peers.",
+      "An AI platform helping young people manage mental health through wearable biometric data and emotion analysis.",
     descriptionKo:
-      "웨어러블 생체 데이터 기반 감정 시각화와 전문 상담 연계를 지원하는 AI 플랫폼입니다.",
+      "웨어러블 생체 정보와 감정 분석을 바탕으로 청년층의 정신건강 관리를 돕는 AI 플랫폼",
     keyFeatures: [
       "Biometric-based emotional avatar (EUM Living Twin)",
       "AI emotional care & instant counselor connection (PsychConnect)",
@@ -215,9 +215,9 @@ export const projects = [
     solutionKo:
       "일일 체크인으로 삶의 균형을 시각화하는 Personal Pattern Engine, 맞춤형 실생활 챌린지, CBT/DBT 기반 AI 동반자 Lumi로 구성된 글로벌 협력 코칭 플랫폼입니다.",
     description:
-      "An AI coaching platform tracking sleep and digital habits with global challenges and a CBT/DBT companion.",
+      "A platform helping teens build healthy digital use and sleep habits through AI coaching and global collaborative challenges.",
     descriptionKo:
-      "수면·디지털 습관을 추적하고 글로벌 챌린지와 AI 코칭을 제공하는 청소년 웰빙 플랫폼입니다.",
+      "AI 코칭과 글로벌 협력 챌린지로 청소년의 건강한 디지털 사용과 수면 습관 형성을 돕는 플랫폼",
     keyFeatures: [
       "30-second daily check-in & weekly pattern visualization",
       "Personalized wellness experiments & global co-op challenges",
@@ -264,9 +264,9 @@ export const projects = [
     solutionKo:
       "사진 한 장으로 식사·영양성분표·처방전을 자동 판별하고, 복약 시간을 알림으로 추적하며, 음성·이모지 기반 UI로 문해력이 낮은 사용자도 쉽게 이용할 수 있는 AI 건강관리 웹앱입니다.",
     description:
-      "A photo-based AI health app helping low-literacy users manage meals, nutrition, and medication easily.",
+      "An image- and voice-based AI web app helping people with limited health literacy or healthcare access manage nutrition and medication.",
     descriptionKo:
-      "사진 한 장으로 식사·영양·복약을 관리하는 저문해층 대상 AI 건강관리 앱입니다.",
+      "건강정보 이해와 의료서비스 접근에 어려움을 겪는 사람들의 영양·복약 관리를 돕는 이미지·음성 기반 AI 웹앱",
     keyFeatures: [
       "Automatic photo-based meal/nutrition/prescription detection",
       "Medication tracking & reminders",
@@ -311,9 +311,9 @@ export const projects = [
     solutionKo:
       "AI가 체크인 데이터를 분석해 맞춤 미션을 추천하고, SMS·사진 기반으로 미션 수행을 자동 추적하며, 오프라인에서도 브라우저 캐싱된 AI 모델로 동작하는 정신건강 플랫폼입니다.",
     description:
-      "An offline-first AI platform recommending recovery missions and tracking progress for vulnerable youth.",
+      "An offline-first mental health platform supporting daily recovery for vulnerable youth and connection to community health workers.",
     descriptionKo:
-      "AI 미션 추천과 자동 추적으로 오프라인에서도 작동하는 청소년 회복 지원 플랫폼입니다.",
+      "취약 청소년의 일상 회복과 마을 보건 도우미 연결을 지원하는 오프라인 우선 정신건강 플랫폼",
     keyFeatures: [
       "AI-recommended missions from check-in data",
       "Automatic mission tracking via SMS/OCR/photo analysis",
@@ -358,9 +358,9 @@ export const projects = [
     solutionKo:
       "12개 인지 게임으로 인지 특성을 평가하고 맞춤 활동을 추천하는 DailyCog Play, 가상 반려견을 키우는 Puppy Buddy, 보호자용 대시보드 ShareCare로 구성된 AI 두뇌훈련 웹앱입니다.",
     description:
-      "An AI cognitive training app using games, a virtual pet, and a caregiver dashboard to sustain engagement.",
+      "An AI web app supporting brain training through gamified cognitive activities and personalized recommendations.",
     descriptionKo:
-      "인지 게임과 가상 반려견, 보호자 대시보드로 꾸준한 두뇌훈련을 돕는 AI 앱입니다.",
+      "게임형 인지 활동과 개인별 맞춤 추천으로 두뇌훈련을 돕는 AI 웹앱",
     keyFeatures: [
       "12 cognitive games with personalized activity recommendations",
       "Gamified virtual pet rewards (Puppy Buddy)",
@@ -405,9 +405,9 @@ export const projects = [
     solutionKo:
       "일상 증상을 기록하고 AI 인사이트를 제공하는 Daily Log, 의약품 정보를 분석하는 Medication Safety, 의료진 상담용 보고서를 생성하는 AI Chat & Doctor Report로 구성된 AI 건강관리 웹앱입니다.",
     description:
-      "An AI app helping women track menopause symptoms, manage medication safety, and prep doctor visits.",
+      "An AI health app supporting women in the menopause transition with symptom and medication management and doctor-visit preparation.",
     descriptionKo:
-      "갱년기 증상 기록과 복약 안전 분석, 의료진 상담 보고서를 지원하는 AI 여성건강 앱입니다.",
+      "폐경 이행기 여성의 증상·복약 관리와 진료 준비를 지원하는 AI 건강관리 웹앱",
     keyFeatures: [
       "Daily symptom logging with AI pattern insights",
       "Photo-based medication label analysis & safety warnings",
@@ -454,9 +454,9 @@ export const projects = [
     solutionKo:
       "스마트폰 기반 VR 노출치료와 실시간 AI 안내, 생각을 유도하는 AI 상담, 불안도와 감정을 시각화하는 리포트로 구성된 저비용 정신건강 관리 웹앱입니다.",
     description:
-      "A low-cost VR exposure therapy and AI counseling app helping manage anxiety and burnout.",
+      "A mental health web app using smartphone-based VR and AI counseling to help manage anxiety and burnout.",
     descriptionKo:
-      "스마트폰 VR 노출치료와 AI 상담으로 불안·번아웃 완화를 돕는 저비용 정신건강 앱입니다.",
+      "스마트폰 기반 VR과 AI 상담을 활용해 불안·번아웃 관리를 지원하는 정신건강 웹앱",
     keyFeatures: [
       "Smartphone VR exposure therapy with real-time AI voice guidance",
       "AI-guided counseling conversations",
@@ -501,9 +501,9 @@ export const projects = [
     solutionKo:
       "가족 소통·유대 상태를 진단하는 Assessment, 맞춤형 챌린지를 제공하는 Challenge Center, 지역별 활동을 시각화하는 Ripple Map으로 구성된 공동 웰니스 플랫폼입니다.",
     description:
-      "A family wellness platform diagnosing bonding, delivering shared challenges, and tracking social impact.",
+      "A shared wellness platform connecting family emotional bonding, healthy habits, and social contribution.",
     descriptionKo:
-      "가족 유대 진단과 맞춤 챌린지로 가족 웰빙과 사회적 기여를 연결하는 플랫폼입니다.",
+      "가족의 정서적 유대와 건강한 생활습관, 사회적 기여를 연결하는 공동 웰니스 플랫폼",
     keyFeatures: [
       "Family communication & bonding assessment",
       "Personalized challenges across gratitude, mindfulness, physical & nutrition",
