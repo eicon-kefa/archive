@@ -93,11 +93,6 @@ export default function ProjectModal({ project, onClose }) {
                 {tx.viewApp}
               </a>
             )}
-            {project.githubUrl && (
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                {tx.github}
-              </a>
-            )}
           </div>
 
           <div className={styles.divider} />

@@ -78,17 +78,6 @@ export default function ProjectCard({ project, onClick }) {
               {tx.viewApp}
             </a>
           )}
-          {project.githubUrl && (
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-              style={{ fontSize: 13, height: 36, padding: '0 14px' }}
-            >
-              {tx.github}
-            </a>
-          )}
           <button className={styles.detailBtn} onClick={() => onClick(project)}>
             {tx.details}
           </button>
