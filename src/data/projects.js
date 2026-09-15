@@ -94,7 +94,7 @@ export const projects = [
     htmlPath: "/2026/m1/index.html",
     posterUrl: "https://drive.google.com/file/d/1O_L6b0BkQjQfhHoBtqjExKu9dH99mxru/view",
     proposalUrl: "https://drive.google.com/file/d/1kAreEpYRsga6GKFEsuHlZEfAyqDmdHgk/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1GlMyL0Rg-hECiLky-X5P-0v3sFL4IzuO/view",
+    demoVideoUrl: "https://youtu.be/8GLbY3RcfpE",
   },
 
   // ─── M2 — Bloom (울산학성중학교 · Malaysia) ────────────────────────────────
@@ -145,7 +145,7 @@ export const projects = [
     htmlPath: "/2026/m2/index.html",
     posterUrl: "https://drive.google.com/file/d/1uEV-UVvOc4k8YSbIWVWzy_XOctFaJKEH/view",
     proposalUrl: "https://drive.google.com/file/d/1Z9TgfjCjgBEq51J6QC43iJmMVwRq7hX1/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1cUAug0-g8N5XDg4yTrPA0joEX-ahzMI5/view",
+    demoVideoUrl: "https://youtu.be/Ma1ZuvPBrYA",
   },
 
   // ─── M3 — IEUM (대구공산중학교 · Philippines) ──────────────────────────────
@@ -192,7 +192,7 @@ export const projects = [
     htmlPath: "/2026/m3/index.html",
     posterUrl: "https://drive.google.com/file/d/11a_snNmePAAgTb8GVFDvezI2RgAiiyc4/view",
     proposalUrl: "https://drive.google.com/file/d/1kwxklptRWZojmTcGst1gTOZuqXfZNxJf/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1g2j8mf6FTpcIrM-UiDwYpz7dDGghTtxL/view",
+    demoVideoUrl: "https://youtu.be/F2WQU60tG5E",
   },
 
   // ─── M4 — LightHouse (성재중학교 · Bangladesh) ─────────────────────────────
@@ -241,7 +241,7 @@ export const projects = [
     htmlPath: "/2026/m4/index.html",
     posterUrl: "https://drive.google.com/file/d/1NiLed_hHRIfLmm7revpflH2AAqGw925w/view",
     proposalUrl: "https://drive.google.com/file/d/1avQrhNujfT2qIAwElwBleHbjnsg-6bsL/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1n9dv-f147rAINRR9I2werPptAcfpPRik/view",
+    demoVideoUrl: "https://youtu.be/2ZjfN5-eeQc",
   },
 
   // ─── H1 — SnapCare (충남삼성고등학교 · Moldova) ────────────────────────────
@@ -288,7 +288,7 @@ export const projects = [
     htmlPath: "/2026/h1/index.html",
     posterUrl: "https://drive.google.com/file/d/1m8HOHo5M5KQtCV6DQmJ1E-z3v_pTa2o6/view",
     proposalUrl: "https://drive.google.com/file/d/1ZXMWwdEUDBwPRvKUfQtP5TINfazU7ijL/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1bAKfsNtPpteBC306ywL--4rU78c_orOv/view",
+    demoVideoUrl: "https://youtu.be/485MJmS01hs",
   },
 
   // ─── H2 — ReNew (대전대신고등학교 · Rwanda) ────────────────────────────────
@@ -335,7 +335,7 @@ export const projects = [
     htmlPath: "/2026/h2/index.html",
     posterUrl: "https://drive.google.com/file/d/1AVB9Bqy-cs0MnJ6MYLSbl4soXFj2gg69/view",
     proposalUrl: "https://drive.google.com/file/d/1Twl74fCeD31bsbzSUy2VODL_JhjIR4eR/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1WcxGLrn8BuEE44TfQiQObHEF2wmhtx1l/view",
+    demoVideoUrl: "https://youtu.be/Sf6byisrRQM",
   },
 
   // ─── H3 — Daily Cog (부산기계공업고등학교 · Uzbekistan) ────────────────────
@@ -382,7 +382,7 @@ export const projects = [
     htmlPath: "/2026/h3/index.html",
     posterUrl: "https://drive.google.com/file/d/1spUsRmAmZ8xjm1JDQ691mK9UG0s8K-fd/view",
     proposalUrl: "https://drive.google.com/file/d/1wz1Y19rabI8zRtIFr9jxA9ZmahTbYLzq/view",
-    demoVideoUrl: "https://drive.google.com/file/d/15soP7CHfqVd_kpOHN3_HORomjQFT82eD/view",
+    demoVideoUrl: "https://youtu.be/LlQJtiHf6m0",
   },
 
   // ─── H4 — HERWORLD (대덕소프트웨어마이스터고등학교 · Indonesia) ────────────
@@ -431,7 +431,7 @@ export const projects = [
     htmlPath: "/2026/h4/index.html",
     posterUrl: "https://drive.google.com/file/d/1a-Sacj7kNXH8x0ZZAQEG5m4F8pcDrk7z/view",
     proposalUrl: "https://drive.google.com/file/d/1ATHQDyq9M1B_YYzlZpmhXS9tzdEBKEfM/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1YfahKVhCNI_ApBnUhxhljo3MyYqL_ZIy/view",
+    demoVideoUrl: "https://youtube.com/shorts/xlTBM3qao-A?feature=share",
   },
 
   // ─── H5 — MonAndo (선린인터넷고등학교 · Bangladesh) ────────────────────────
@@ -478,7 +478,7 @@ export const projects = [
     htmlPath: "/2026/h5/index.html",
     posterUrl: "https://drive.google.com/file/d/1XGDzopOffurznlCecMcRKvywgk9gldyN/view",
     proposalUrl: "https://drive.google.com/file/d/1wLUtqmJfctcQNtSSFXFJv4i1em6ji3l-/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1sesvk1iODhS6gcuL8uPR3ArVWP6GUyG-/view",
+    demoVideoUrl: "https://youtu.be/kQXI19LXHBM",
   },
 
   // ─── H6 — Hugrow (청심국제고등학교 · Indonesia) ────────────────────────────
@@ -525,7 +525,7 @@ export const projects = [
     htmlPath: "/2026/h6/index.html",
     posterUrl: "https://drive.google.com/file/d/1mAET_4hn48y0ILOEfnA2dcrlhcN7uE0F/view",
     proposalUrl: "https://drive.google.com/file/d/1rrkSfGTSxHidl75DiX3M7qfQarQJHCOp/view",
-    demoVideoUrl: "https://drive.google.com/file/d/1UCgsAA7T5f_5fzFTkLu2Pu6Yo2cTntuO/view",
+    demoVideoUrl: "https://youtu.be/vuLtVrpdru8",
   },
 ]
 
